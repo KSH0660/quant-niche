@@ -11,9 +11,7 @@ LOAD_ENV = set -a; [ -f .env ] && . ./.env; set +a;
 DAYS    ?= 7
 LEDGER  ?= data/ledger/events.jsonl
 
-.PHONY: help setup test demo collect collect-us collect-kr collect-dry ledger check-key clean loop brief cron-show cron-install cron-remove
-
-CRON_LINE = 0 7 * * 1-5 cd $(CURDIR) && /bin/zsh scripts/daily.sh >> data/brief/cron.log 2>&1
+.PHONY: help setup test demo collect collect-us collect-kr collect-dry ledger check-key clean brief
 
 help: ## 이 도움말 출력 (기본)
 	@echo "quant-niche — make <명령>"
@@ -62,23 +60,9 @@ check-key: ## DART_API_KEY 가 .env 에 잡히는지 확인
 		echo "DART_API_KEY 미설정 — .env 에 넣거나 opendart.fss.or.kr 에서 발급하세요."; \
 	fi
 
-loop: ## 일일 자동 루프 1회 수동 실행 (수집→에이전트 워크플로→브리프)
-	@bash scripts/daily.sh
-
 brief: ## 최상단 브리프(지금 기회 + 행동 조언) 보기
 	@if [ -f data/brief/BRIEF.md ]; then cat data/brief/BRIEF.md; \
-	else echo "브리프 없음. 먼저 make loop 를 돌리세요."; fi
-
-cron-show: ## 등록할 crontab 라인 출력 (매 평일 07:00)
-	@echo "$(CRON_LINE)"
-
-cron-install: ## 위 crontab 라인을 등록 (중복 시 건너뜀)
-	@( crontab -l 2>/dev/null | grep -vF 'scripts/daily.sh'; echo "$(CRON_LINE)" ) | crontab -
-	@echo "등록 완료. 확인: crontab -l"
-
-cron-remove: ## quant-niche cron 라인 제거
-	@( crontab -l 2>/dev/null | grep -vF 'scripts/daily.sh' ) | crontab - || true
-	@echo "제거 완료."
+	else echo "브리프 없음. 세션에서 /quant-daily 를 한 번 돌리세요."; fi
 
 clean: ## 캐시 정리 (.pytest_cache, __pycache__ 등)
 	rm -rf .pytest_cache .ruff_cache
