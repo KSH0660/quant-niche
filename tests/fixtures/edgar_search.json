@@ -1,0 +1,37 @@
+{
+  "hits": {
+    "total": {"value": 3},
+    "hits": [
+      {
+        "_id": "0001193125-26-000111:d111.htm",
+        "_source": {
+          "ciks": ["0000320193"],
+          "display_names": ["Acme Industries Inc. (ACME) (CIK 0001234567)"],
+          "file_date": "2026-05-30",
+          "file_type": "SC TO-I",
+          "root_forms": ["SC TO-I"]
+        }
+      },
+      {
+        "_id": "0000950123-26-000222:merger.htm",
+        "_source": {
+          "ciks": ["0000777777"],
+          "display_names": ["Target Corp (TGT2) (CIK 0000777777)"],
+          "file_date": "2026-05-28",
+          "file_type": "DEFM14A",
+          "root_forms": ["DEFM14A"]
+        }
+      },
+      {
+        "_id": "0000888888-26-000333:fund.htm",
+        "_source": {
+          "ciks": ["0000888888"],
+          "display_names": ["Closed End Fund (CEFX) (CIK 0000888888)"],
+          "file_date": "2026-05-25",
+          "file_type": "N-2",
+          "root_forms": ["N-2"]
+        }
+      }
+    ]
+  }
+}

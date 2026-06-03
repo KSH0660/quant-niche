@@ -1,0 +1,42 @@
+{
+  "status": "000",
+  "message": "정상",
+  "page_no": 1,
+  "page_count": 100,
+  "total_count": 3,
+  "list": [
+    {
+      "corp_code": "00126380",
+      "corp_name": "가나기업",
+      "stock_code": "005930",
+      "corp_cls": "Y",
+      "report_nm": "공개매수신고서",
+      "rcept_no": "20260530000111",
+      "flr_nm": "가나기업",
+      "rcept_dt": "20260530",
+      "rm": ""
+    },
+    {
+      "corp_code": "00226380",
+      "corp_name": "다라전자",
+      "stock_code": "000660",
+      "corp_cls": "Y",
+      "report_nm": "주요사항보고서(회사합병결정)",
+      "rcept_no": "20260529000222",
+      "flr_nm": "다라전자",
+      "rcept_dt": "20260529",
+      "rm": ""
+    },
+    {
+      "corp_code": "00326380",
+      "corp_name": "마바홀딩스",
+      "stock_code": "207940",
+      "corp_cls": "K",
+      "report_nm": "[기재정정]분기보고서",
+      "rcept_no": "20260528000333",
+      "flr_nm": "마바홀딩스",
+      "rcept_dt": "20260528",
+      "rm": ""
+    }
+  ]
+}
