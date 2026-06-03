@@ -1,5 +1,7 @@
 # 데이터 캐시 (재현 가능하므로 커밋하지 않음)
-data/
+# 주의: `data/`(디렉토리 통째 제외)는 하위 negation을 무효화한다(git 함정).
+# 내용물만 제외하는 `data/*`를 써야 아래 !data/ledger/ · !data/brief/ 재포함이 먹는다.
+data/*
 !data/.gitkeep
 
 # Python
