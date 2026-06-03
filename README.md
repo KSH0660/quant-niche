@@ -7,6 +7,7 @@
 - 프로젝트 헌법·원칙: [`CLAUDE.md`](CLAUDE.md)
 - 사전지식(4개 모델 수렴): [`reports/00-prior-art-synthesis.md`](reports/00-prior-art-synthesis.md)
 - 토큰-검약 하네스 설계: [`reports/01-agent-harness-architecture.md`](reports/01-agent-harness-architecture.md)
+- **루프 운영 플레이북(하루종일 돌리면 뭐가 나오나·어떻게 등록하나)**: [`reports/02-loop-operations-playbook.md`](reports/02-loop-operations-playbook.md)
 - 아이디어 레지스트리: [`research/INDEX.md`](research/INDEX.md) · 운영절차: [`research/RUNBOOK.md`](research/RUNBOOK.md)
 
 ## Layer 0 — 결정론 수집기 (이 패키지)
