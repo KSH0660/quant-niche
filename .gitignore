@@ -18,8 +18,9 @@ venv/
 .ruff_cache/
 .pytest_cache/
 
-# durable 클라우드 루틴: 상태(ledger)·산출물(brief) 영속화 위해 추적
+# durable 루프: 상태·산출물 영속화 위해 추적 (그 외 data/* 는 캐시라 제외)
 !data/ledger/
 !data/ledger/events.jsonl
 !data/brief/
-!data/brief/BRIEF.md
+!data/brief/*.md
+!data/watchlist.json
