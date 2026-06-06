@@ -12,15 +12,15 @@
       "added": "2026-06-06",
       "status": "tracking",
       "redteam": {
-        "verdict": "조건부-코어불가",
+        "verdict": "조건부-NO_ENTRY",
         "date": "2026-06-06",
-        "flag": "NAV_NOT_FIXED(레버리지35.6%+inverse floater→실효듀레이션13~19년, 금리좌측꼬리); STALE_DISCOUNT(-3.39%는 2025-11스냅, 2025-05 이미 -1.08%→현재 par 부근 추정); DELEVERAGE_COST; 한국22%세금"
+        "flag": "DISCOUNT_UNMEASURABLE(라이브 NAV/할인 소스 전부 403→알파 측정 자체 불가=블라인드 듀레이션 베팅); STALE_DISCOUNT(최신 실측 2025-05 -1.08%, 13개월 묵음, 청산 5.5개월 전→par 수렴 개연); NAV_NOT_FIXED(레버리지35.6%+inverse floater→실효듀레이션13~19년, 금리 좌측꼬리 -8~25%가 잔여캐리~3% 압도); DELEVERAGE_COST; 한국22%세금"
       },
       "snapshots": [
         {
           "date": "2026-06-06",
           "price": 9.12,
-          "price_source": "stale_2nd_source(2025-11-30 N-CSR); 클라우드 Stooq/yfinance 403→라이브가 미확보",
+          "price_source": "stale_2nd_source(2025-11-30 N-CSR); 클라우드 Stooq/yfinance/cefconnect/cefdata 전부 403→라이브가·할인율 미확보. 최신 실측 할인 -1.08%@2025-05-16(ainvest).",
           "spread_pct": null,
           "annualized": null,
           "days_left": 177,
@@ -30,7 +30,7 @@
       "conviction": {
         "days_tracked": 1,
         "buy_since": null,
-        "note": "코어 부적격(레드팀): 청산은 deal-break 불가하나 NAV가 고정 아님(레버리지 듀레이션). 현재 잔존 할인 미확정(STALE)이 게이트의 전부 — 로컬(주거IP)에서 cefconnect/cefdata 일일 NAV·할인 확보가 추적의 전제. 할인이 par로 수렴해 있으면 즉시 drop."
+        "note": "NO ENTRY(레드팀 06-06 강화). 청산은 deal-break 불가하나 ① NAV 비고정(레버리지 듀레이션) ② 잔존 할인 측정 불가(403)가 결합 → 진입 근거 0. 재검토 단일 게이트=운영자 로컬(주거IP)에서 실시간 잔존 할인 실측 + 그 폭이 듀레이션1σ+deleverage+22%세금+FX를 덮을 때만. 그 전엔 추적만, 진입 금지."
       }
     },
     {
@@ -46,13 +46,13 @@
       "redteam": {
         "verdict": "조건부-추적만",
         "date": "2026-06-06",
-        "flag": "PRORATION_DILUTION(최대25%만 NAV99% 매입→75%잔여주 할인복귀); NO_CONVERGENCE_FORCE(단순 tender, reorg아님); 9/1 미래 미확정(SC TO-C는 예고일 뿐, SC TO-I 확정 대기)"
+        "flag": "PRORATION_DILUTION(최대25%만 NAV99% 매입→75%잔여주 할인복귀); NO_CONVERGENCE_FORCE(단순 tender, reorg아님); SC_TO-I_미개시(06-06 재확인: SC TO-C 예고만, 확정 tender 9월초 개시 예정·완료 ~10/14)"
       },
       "snapshots": [
         {
           "date": "2026-06-06",
           "price": null,
-          "price_source": "라이브가 미확보(클라우드 403). 선행 추적 — tender 개시 ~2026-09-01 예정.",
+          "price_source": "라이브가 미확보(클라우드 403). 선행 추적 — tender ~2026-09-01 개시 예정. SC TO-I 미개시(변동 없음).",
           "spread_pct": null,
           "annualized": null,
           "days_left": 87,
@@ -62,7 +62,7 @@
       "conviction": {
         "days_tracked": 1,
         "buy_since": null,
-        "note": "선행 워치만. 확정 종료 메커니즘 미달(부분 tender·미래 이벤트). SC TO-I 확정 + 깊은 잔존 할인 동시 충족 시 부분차익 재검토. 현재는 진입 권고 없음."
+        "note": "선행 워치만(변동 없음). 확정 종료 메커니즘 미달(부분 tender·미래 이벤트). SC TO-I 확정(9월초) + 깊은 잔존 할인 동시 충족 시 부분차익 재검토. 현재 진입 권고 없음."
       }
     },
     {
@@ -95,6 +95,70 @@
         "days_tracked": 1,
         "buy_since": null,
         "note": "기각(011 동일 함정 반복). 코어 부적격. forward 페이퍼 리스크 관측 표본으로만 유용. 실거래 진입 권고 없음."
+      }
+    },
+    {
+      "id": "CZR-fertitta-merger",
+      "ticker": "CZR",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 31.00,
+      "deadline": "2027-05-27",
+      "source_url": "https://www.stocktitan.net/sec-filings/CZR/8-k-caesars-entertainment-inc-reports-material-event-b58bd350abef.html",
+      "added": "2026-06-06",
+      "status": "drop",
+      "redteam": {
+        "verdict": "기각(코어)",
+        "date": "2026-06-06",
+        "flag": "ANNUALIZED_LT_GATE(gross 6.1%를 12~18개월 클로징으로 연율화 시 4~6% < 허들 7.3%=T-bill+3%p); REGULATORY_NOT_CLEAN(다주 게이밍 라이선스+~$2.3B divestiture→'규제청정' 게이트 명백 위반); NEGSKEW_GAPDOWN(무산시 -29%, 부채많은 카지노); TICKING_FEE≠DOWNSIDE(ticking fee는 2027-06말 이후 지연분만 보상, 무산 음의왜도엔 무력—운영자 '하방보전' 가정은 오해); CROWDED_ARB; 한국22%세금"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": 29.22,
+          "price_source": "운영자/2차출처 스냅 $29.22@2026-06-02(라이브 403). gross ~6.1%.",
+          "spread_pct": 6.09,
+          "annualized": 5.0,
+          "days_left": 356,
+          "status": "drop"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "기각(코어 부적격). 연율이 확신게이트(+3%p) 미달 + LBO·다주 게이밍 규제·$2.3B divestiture 복합 무산경로. 단 '규제 무산경로' forward 페이퍼 리스크 관측 1급 표본(011 게이트 검증용)으로 drop 보존. 실거래 진입 권고 없음."
+      }
+    },
+    {
+      "id": "ASRT-zydus-tender",
+      "ticker": "ASRT",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 23.50,
+      "deadline": "2026-06-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001808665/000110465926063190/tm2614877d1_ex99-a1a.htm",
+      "added": "2026-06-06",
+      "status": "drop",
+      "redteam": {
+        "verdict": "기각",
+        "date": "2026-06-06",
+        "flag": "SPREAD_GONE(tender 만기 6/15 9일 임박→deal price로 수렴, 잔여 스프레드 net 마찰·세금 후 음수); ATYPICAL_CONDITION(Closing Net Cash≥$95M 비전형 무산 트리거가 얇은 스프레드에 꼬리 추가); NEGSKEW_PHARMA(단일제품군 제약)"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": null,
+          "price_source": "라이브가 미확보(403). tender 만기 2026-06-15 23:59 ET 임박.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 9,
+          "status": "drop"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "기각(신규 진입 메리트 없음). 만기 임박으로 스프레드 소멸 + 비전형 net cash 무산조건. 곧 closed 처리. 진입 권고 없음."
       }
     }
   ]
