@@ -24,3 +24,5 @@ venv/
 !data/brief/
 !data/brief/*.md
 !data/watchlist.json
+# 전이성 로그는 추적 제외
+data/brief/*.log

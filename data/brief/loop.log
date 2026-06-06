@@ -1,7 +1,0 @@
-===== daily loop 2026-06-03 18:48:08 =====
-[1/2] make collect
-수집 31건 → new=0 changed=0 unchanged=31  (대장 기존 78건)
-대장 저장: data/ledger/events.jsonl (총 78건)
-[2/2] claude headless loop
-API Error: 500 Internal server error. This is a server-side issue, usually temporary — try again in a moment. If it persists, check https://status.claude.com.
-  claude 루프 실패 — loop.log 확인
