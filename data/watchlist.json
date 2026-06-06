@@ -1,1 +1,101 @@
-{"deals": []}
+{
+  "deals": [
+    {
+      "id": "KTF-dws-muni-liq",
+      "ticker": "KTF",
+      "market": "US",
+      "type": "cef_liq",
+      "deal_price": null,
+      "nav_ref": 9.43,
+      "deadline": "2026-11-30",
+      "source_url": "https://www.stocktitan.net/sec-filings/KTF/n-csr-dws-municipal-income-trust-sec-filing-eeb135579a65.html",
+      "added": "2026-06-06",
+      "status": "tracking",
+      "redteam": {
+        "verdict": "조건부-코어불가",
+        "date": "2026-06-06",
+        "flag": "NAV_NOT_FIXED(레버리지35.6%+inverse floater→실효듀레이션13~19년, 금리좌측꼬리); STALE_DISCOUNT(-3.39%는 2025-11스냅, 2025-05 이미 -1.08%→현재 par 부근 추정); DELEVERAGE_COST; 한국22%세금"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": 9.12,
+          "price_source": "stale_2nd_source(2025-11-30 N-CSR); 클라우드 Stooq/yfinance 403→라이브가 미확보",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 177,
+          "status": "tracking"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "코어 부적격(레드팀): 청산은 deal-break 불가하나 NAV가 고정 아님(레버리지 듀레이션). 현재 잔존 할인 미확정(STALE)이 게이트의 전부 — 로컬(주거IP)에서 cefconnect/cefdata 일일 NAV·할인 확보가 추적의 전제. 할인이 par로 수렴해 있으면 즉시 drop."
+      }
+    },
+    {
+      "id": "NFJ-virtus-tender",
+      "ticker": "NFJ",
+      "market": "US",
+      "type": "cef_liq",
+      "deal_price": null,
+      "deadline": "2026-09-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1260563/000119312526163126/d31950dsctoc.htm",
+      "added": "2026-06-06",
+      "status": "tracking",
+      "redteam": {
+        "verdict": "조건부-추적만",
+        "date": "2026-06-06",
+        "flag": "PRORATION_DILUTION(최대25%만 NAV99% 매입→75%잔여주 할인복귀); NO_CONVERGENCE_FORCE(단순 tender, reorg아님); 9/1 미래 미확정(SC TO-C는 예고일 뿐, SC TO-I 확정 대기)"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": null,
+          "price_source": "라이브가 미확보(클라우드 403). 선행 추적 — tender 개시 ~2026-09-01 예정.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 87,
+          "status": "tracking"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "선행 워치만. 확정 종료 메커니즘 미달(부분 tender·미래 이벤트). SC TO-I 확정 + 깊은 잔존 할인 동시 충족 시 부분차익 재검토. 현재는 진입 권고 없음."
+      }
+    },
+    {
+      "id": "CPRX-angelini-merger",
+      "ticker": "CPRX",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 31.50,
+      "deadline": "2026-11-06",
+      "source_url": "https://www.stocktitan.net/sec-filings/CPRX/prem14a-catalyst-pharmaceuticals-inc-preliminary-merger-proxy-stateme-68cf123c664b.html",
+      "added": "2026-06-06",
+      "status": "drop",
+      "redteam": {
+        "verdict": "기각",
+        "date": "2026-06-06",
+        "flag": "SPREAD_LT_TBILL(1.3%×5개월≈연3.1% < T-bill 4.3%, 세후 명백 미달); NEGSKEW_ASYMMETRY(단일제품 Firdapse 바이오, 무산시 -25% 갭다운 vs 1.3% 보상). 011과 동일 사유."
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-06",
+          "price": 31.10,
+          "price_source": "2차출처(검색시점). 스프레드 ~1.3%.",
+          "spread_pct": 1.29,
+          "annualized": 3.1,
+          "days_left": 153,
+          "status": "drop"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "기각(011 동일 함정 반복). 코어 부적격. forward 페이퍼 리스크 관측 표본으로만 유용. 실거래 진입 권고 없음."
+      }
+    }
+  ]
+}
