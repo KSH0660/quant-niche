@@ -13,8 +13,8 @@
       "status": "tracking",
       "redteam": {
         "verdict": "NO_ENTRY(강화)",
-        "date": "2026-06-07",
-        "flag": "LEVERAGE_EXTENDED(VRDP 상환 11-10-26/백스톱 05-10-27→청산일 이후까지 레버리지 풀가동, '청산임박 디레버리지로 듀레이션 축소' 시나리오 명시 반증); NO_EARLY_DELEVERAGE(Q1팩트시트 as-of 3.31.26 총레버리지 35.61% 불변); DISCOUNT_UNMEASURABLE(라이브 NAV/할인 소스 전부 403→알파 측정 불가); NAV_NOT_FIXED+LEVERAGED_DURATION(잔여캐리~3% vs 좌측꼬리 -8~25% 비대칭 불변); 한국22%세금"
+        "date": "2026-06-08",
+        "flag": "LEVERAGE_EXTENDED(VMTPS Series2020-1 rate period term 11-10-26/강제상환 05-10-27→청산일 이후까지 레버리지 풀가동, '청산임박 디레버리지로 듀레이션 축소' 시나리오 명시 반증); NO_EARLY_DELEVERAGE(Q1팩트시트 as-of 3.31.26 총레버리지 35.61% 불변, 신규 디레버리지/청산 record date 공시 無); DISCOUNT_UNMEASURABLE(라이브 NAV/할인 소스 전부 403→알파 측정 불가); NAV_NOT_FIXED+LEVERAGED_DURATION(잔여캐리~3% vs 좌측꼬리 -8~25% 비대칭 불변); ROC_IN_DISTRIBUTION(5월 월$0.061 분배 일부 원금환급 추정→캐리 알파 추가 약화); 한국22%세금"
       },
       "snapshots": [
         {
@@ -34,12 +34,21 @@
           "annualized": null,
           "days_left": 176,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-08",
+          "price": 9.19,
+          "price_source": "stale_2nd_source(stockanalysis $9.19@2026-02-18); 라이브 NAV/할인율 여전히 403(cefconnect/cefdata/dws/stockanalysis 전부 차단). 신규 디레버리지/청산 record date 공시 미확인.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 175,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 2,
+        "days_tracked": 3,
         "buy_since": null,
-        "note": "NO ENTRY 강화(레드팀 06-07). 신규 반증: 레버리지(VRDP) 상환이 11-10-26/05-10-27로 *연장*되어 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. 사실상 dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
+        "note": "days_tracked=3 도달했으나 확신게이트 #3(레드팀 통과) 미충족 → buy 졸업 불가. NO ENTRY 유지·강화(레드팀 06-08). 레버리지(VMTPS) 상환 11-10-26/05-10-27 *연장*으로 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 신규: 5월 분배 일부 ROC 추정→캐리 알파 추가 약화. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
       }
     },
     {
@@ -54,8 +63,8 @@
       "status": "tracking",
       "redteam": {
         "verdict": "조건부-추적만(+EV 경계 명문화)",
-        "date": "2026-06-07",
-        "flag": "PRORATION_DILUTION(최대25%만 NAV99% 매입→75%잔여주 할인복귀, EV 0 취급); NO_CONVERGENCE_FORCE(단순 tender, reorg아님); FUTURE_UNCONFIRMED(SC TO-I 미개시, ~9/1 개시 예정); EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT(진입할인 D≳5% + SC TO-I 확정 둘다 충족시에만 즉시실현 25%다리 소폭+EV)"
+        "date": "2026-06-08",
+        "flag": "PRORATION_DILUTION(최대25%만 NAV99% 매입→75%잔여주 할인복귀, EV 0 취급); NO_CONVERGENCE_FORCE(단순 tender, reorg아님); FUTURE_UNCONFIRMED(SC TO-I 미개시, ~9/1 개시·~10/14 완료 예정); EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT(진입할인 D≳5% + SC TO-I 확정 둘다 충족시에만 즉시실현 25%다리 소폭+EV); STANDSTILL_KILL_BY_10-21(Saba 13D-A: tender 결제가 2026-10-21까지 미발생 시 standstill 합의 소멸→이벤트 조건부성·deal-slip 꼬리 추가)"
       },
       "snapshots": [
         {
@@ -75,12 +84,21 @@
           "annualized": null,
           "days_left": 86,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-08",
+          "price": null,
+          "price_source": "라이브 절대가/NAV 미확보(403). SC TO-I 여전히 미개시(2차출처: ~9/1 개시·~10/14 완료 예정). 신규: Saba 13D-A standstill kill-by = tender 결제 2026-10-21 미발생 시 합의 소멸.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 85,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 2,
+        "days_tracked": 3,
         "buy_since": null,
-        "note": "추적 유지. 할인이 ~-13.8%로 깊어(레드팀 +EV 경계 D≳5% 초과 가능성) 1군 중 가장 흥미로우나, 게이트 ⓐ(SC TO-I 확정) 미충족 — tender가 ~9/1까지 안 열려 잡을 라이브 다리가 없음. 25% 안분 즉시실현 다리만 +EV(잔여 75%는 EV 0), 1회 이벤트 총자본 대비 ~+0.78%. SC TO-I 개시 + 실측 진입할인 D≳5% 동시 충족시 위성 소액 재검토. 현재 진입 권고 없음."
+        "note": "days_tracked=3 도달했으나 확신게이트 ⓐ(SC TO-I 확정) 미충족 → buy 졸업 불가, 추적 유지. tender가 ~9/1까지 안 열려 잡을 라이브 다리가 없음. 25% 안분 즉시실현 다리만 +EV(잔여 75%는 EV 0), 1회 이벤트 총자본 대비 ~+0.78%. 신규 꼬리: Saba standstill이 10-21 결제 미발생 시 소멸(이벤트 조건부성↑). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 진입할인 D≳5% 동시 충족시 위성 소액 재검토. 현재 진입 권고 없음."
       }
     },
     {
@@ -179,6 +197,15 @@
           "spread_pct": 0.21,
           "annualized": null,
           "days_left": 8,
+          "status": "drop"
+        },
+        {
+          "date": "2026-06-08",
+          "price": 23.45,
+          "price_source": "2차출처(Robinhood $23.45@2026-06-06, 일중 $23.44~23.47). $23.50 tender 만기 6/15 23:59 ET, 연장·철회 없음·금융컨디션 無. 스프레드 0.2% 수렴완료.",
+          "spread_pct": 0.21,
+          "annualized": null,
+          "days_left": 7,
           "status": "drop"
         }
       ],
