@@ -6,7 +6,7 @@
 - **상태**: active (레드팀 진행 — KTF/NFJ 라이브 후보 검증 중. 코어 적격성은 muni NAV 변동 위험에 달림)
 - **소액 친화성**: 높음 (무료 데이터: cefconnect/cefdata 일일 NAV·할인, EDGAR N-CSR/8-K로 청산조건. 롱온리·숏 불요)
 - **타깃 시장/자산**: 미국 상장 **만기형/청산확정 CEF 보통주**. 1차 후보: KTF(muni, 청산확정), NFJ(tender, 부분).
-- **마지막 업데이트**: 2026-06-07
+- **마지막 업데이트**: 2026-06-09
 - **담당 흐름**: hunter ☑ · data-scout ☑ · red-team ☑ · validation ☐ · friction ☐
 
 ---
@@ -61,6 +61,12 @@
   >
   > **핵심 기각 논거는 바뀌지 않는다 — 오히려 강화:** "디레버리지로 듀레이션이 줄 것"이라는 *유일한 완화 시나리오*가 발행사 공시로 명시 반증됐다. 레버리지는 청산 ~20일 전까지 유지되고 백스톱은 청산 이후로 연장 → 잔여 5.5개월 내내 35.6% 레버리지 장기 muni 듀레이션 좌측꼬리에 풀노출. "할인 측정 불가(403) + 듀레이션 좌측꼬리"라는 두 기둥 모두 **그대로 유효, 2번 기둥은 더 단단해짐.** verdict 유지: **🔴 NO ENTRY.** flag 추가: **LEVERAGE_EXTENDED(redeem 11-10-26/backstop 05-10-27), NO_EARLY_DELEVERAGE.**
 
+  > **🔄 KTF 레드팀 재검토 (2026-06-09, 잔여~174일) — verdict 유지: 🔴 NO ENTRY. 변화 없음, 직전 판정(06-07/06-08 강화) 그대로.**
+  >
+  > **재확인(웹, 06-09):** 구조적 신규 사실 없음. 청산일 여전히 "no later than 2026-11-30"으로만 확정, **최종 liquidating record date 미공시**(RF-4 자본묶임 불확실 지속). 월 분배는 03-09-26 declare분까지 7% 목표로 지속 — 단 **5월 분배 일부 ROC(원금환급) 추정 미해소** → 표면 7%가 캐리(income)가 아니라 *자기 NAV 환급*일 가능성 상존(캐리 알파 약화, RF-2 비대칭 재확인). 라이브 NAV/할인 **13개월째 403**(DISCOUNT_UNMEASURABLE 불변). 가격은 여전히 시점 제각각인 2차출처 stale($9.12 / 9.155 / 9.19).
+  > - **staleness가 진입을 막는가? → 그렇다, 결정적으로(단독 차단 사유).** 진입의 *유일한 알파원*(현재 잔존 할인폭)을 13개월 묵은 -1.08%로만 알아 측정 불가. 신선 할인 실측 없이는 베팅 근거 0 = 진입 차단. 설령 실측돼도 RF-2(레버리지 만기까지 연장 확정)의 듀레이션 좌측꼬리가 미세 할인을 압도하므로 코어 부적격은 *별개의 독립 사유*로 유지.
+  > - **신규 위험요소 없음.** 06-07 이래 deal 구조 불변. days_tracked=3, **게이트#3(레드팀 통과) 미충족 → buy 졸업 불가 상태 유지.** flag 전부 유지(STALE_DISCOUNT, DISCOUNT_UNMEASURABLE, NAV_NOT_FIXED, LEVERAGED_DURATION, LEVERAGE_EXTENDED, NO_EARLY_DELEVERAGE).
+
 ---
 
 ### 딜 2 — NFJ (Virtus Dividend Interest & Premium) · 부분 tender [선행추적]
@@ -92,6 +98,12 @@
   >
   > **결론 — +EV 경로는 *존재하나 협소하고 조건부*:** (1) 본질적 진입 부적격은 *아니다* — **진입 할인 D가 충분히 깊으면(대략 −5% 이상) 즉시실현 25% 다리만으로 마찰·세금 후 소폭 +EV가 가능.** 단 (2) 이건 "확정 수렴 near-arb"가 아니라 **부분 유동성 이벤트의 깊은할인 하베스팅**이라 1군 코어 정의엔 영구 미달(NO_CONVERGENCE_FORCE 불변), 위성으로도 1회 이벤트 기대수익이 총자본 대비 1% 미만이라 절대금액·빈도에서 약하다. (3) 75% 잔여 다리는 *기대값에서 0~소폭+로만 취급*하고 절대 캐리로 삼지 말 것 — 할인복귀(D'→D)가 기본 시나리오. (4) **결정적 미충족 게이트 2개 그대로:** ⓐ 진입 할인 D 실측(현재 미확인), ⓑ SC TO-I 확정(미개시). 둘 다 통과 + D>~5% 확인 시에만 *위성 소액* 후보로 승격. 현재는 진입 부적격 유지. verdict 유지: **🟡 추적만.** flag 유지: **PRORATION_DILUTION, NO_CONVERGENCE_FORCE, FUTURE_UNCONFIRMED.** flag 추가: **EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT(D≳5% 세후 boundary).**
 
+  > **🔄 NFJ 레드팀 재검토 (2026-06-09, 개시까지 ~84일) — verdict 유지: 🟡 추적만 / 조건부-추적만. 변화 없음, 직전 판정(+EV 경계 명문화) 유지.**
+  >
+  > **재확인(웹, 06-09):** 신규 확정 사실 없음 — **여전히 SC TO-C(예고)만 존재하고 확정 SC TO-I는 미개시**(이사회 04-17 승인, 25%@NAV99%, ~9/1 개시·~10/14 완료 예상). FUTURE_UNCONFIRMED 불변. Saba 13D-A 조항 재확인: tender 결제(예정 ~2026-10-21) 미발생 시 standstill 소멸 → **이벤트가 standstill에 *조건부*라 SC TO-I 개시 전까지는 취소·변경 가능성이 구조적으로 살아있음**(RF-3 강화). 본 합의는 2028 proxy season까지 유효하나 *이번 25% tender 자체는 미개시*라는 점이 핵심.
+  > - **staleness가 진입을 막는가? → 그렇다.** +EV의 두 게이트 ⓐ진입할인 D 실측(403로 미확보, 3일째)·ⓑSC TO-I 확정(미개시)이 *둘 다 미충족*. D를 못 재면 D≳5% 세후 boundary 충족 여부를 알 수 없어 진입 근거 0. 게다가 boundary 충족하더라도 1회 이벤트 총자본 대비 +0.78% 수준이라 절대금액이 얇음 — 마찰·FX 노이즈에 묻힐 위험.
+  > - **신규 위험요소 없음.** flag 전부 유지(PRORATION_DILUTION, NO_CONVERGENCE_FORCE, FUTURE_UNCONFIRMED, EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT). **진입 게이트 미충족 → 추적만 유지.**
+
 ---
 
 ### 딜 3 — CPRX (Catalyst → Angelini, $31.50 현금) · 합병차익 [011 트랙, 코어 부적격 확인용]
@@ -109,22 +121,22 @@
 
 ---
 
-## 판정 & 다음 단서 (2026-06-07 레드팀 재검토)
+## 판정 & 다음 단서 (2026-06-09 레드팀 재검토 — 변화 없음, 직전 판정 유지)
 
 - **레드팀 판정 요약:**
   | 딜 | verdict | 핵심 flag | 코어 적격? |
   |---|---|---|---|
-  | **KTF** | 🔴 NO ENTRY (06-07 재확인 — 기각논거 강화) | STALE_DISCOUNT, DISCOUNT_UNMEASURABLE(403), NAV_NOT_FIXED, LEVERAGED_DURATION, **LEVERAGE_EXTENDED, NO_EARLY_DELEVERAGE** | **아니오** — 디레버리지 미시작·레버리지 연장 확인, 듀레이션 폭탄 만기까지 풀가동 |
-  | **NFJ** | 🟡 조건부(추적만) | PRORATION_DILUTION, NO_CONVERGENCE_FORCE, FUTURE_UNCONFIRMED, **EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT** | 아니오(코어) — 단 D≳5% + SC TO-I 확정 시 *위성 소액* 후보 가능 |
+  | **KTF** | 🔴 NO ENTRY (06-09 재확인 — 변화 없음, 기각논거 그대로) | STALE_DISCOUNT, DISCOUNT_UNMEASURABLE(403), NAV_NOT_FIXED, LEVERAGED_DURATION, LEVERAGE_EXTENDED, NO_EARLY_DELEVERAGE | **아니오** — 디레버리지 미시작·레버리지 연장 확인, 듀레이션 폭탄 만기까지 풀가동. days_tracked=3, 게이트#3 미충족=buy 졸업 불가 |
+  | **NFJ** | 🟡 조건부(추적만) (06-09 재확인 — 변화 없음) | PRORATION_DILUTION, NO_CONVERGENCE_FORCE, FUTURE_UNCONFIRMED, EV_POSITIVE_ONLY_IF_DEEP_DISCOUNT | 아니오(코어) — SC TO-I 미개시·D 미실측, 두 게이트 모두 미충족. D≳5% + SC TO-I 확정 시 *위성 소액* 후보 |
   | **CPRX** | 🔴 기각(코어) | SPREAD_LT_TBILL, NEGSKEW_ASYMMETRY | 아니오 — 011 압축함정 재현 |
 
-- **핵심 질문에 대한 답:** KTF는 **"현금 받는 확정 수렴 = 코어"의 첫 진짜 후보가 되지 못한다.** deal-break를 구조적으로 제거한 점은 011보다 우월하나, **수렴 대상인 NAV 자체가 35.6% 레버리지 + inverse floater 장기 muni라 금리 좌측꼬리에 노출** → 음의왜도의 *형태만* deal-break에서 duration으로 바뀌었다. **2026-06-07 신규 확인:** "청산 임박 디레버리지로 듀레이션 감소" 완화 시나리오는 발행사 공시(term preferred 상환일 11-10-26 / 백스톱 05-10-27 *연장*)로 명시 반증 — 듀레이션은 줄지 않고 끝까지 유지. 게다가 실시간 할인 자체가 측정 불가(403)라 베팅 근거가 0. **코어의 진짜 조건은 "현금을 받는다"가 아니라 "수렴 대상(NAV)이 고정(현금·T-bill 담보)이다"** — 이 기준으로 014(SPAC 신탁)는 통과, KTF는 탈락.
+- **2026-06-09 핵심 결론:** 두 추적 딜 모두 **신규 구조적 사실 없음 → 직전 판정 유지.** 진입을 막는 공통 분모는 **staleness**다 — KTF는 13개월 묵은 할인(403), NFJ는 미실측 할인(403) + 미개시 SC TO-I. 두 딜 모두 *유일한 알파원(현재 잔존 할인폭)*이 측정 불가라, 측정 불가 그 자체가 진입 차단이다. KTF는 더해서 코어 부적격(레버리지 만기연장 듀레이션 좌측꼬리)이 독립 사유로 확정. **실거래 진입 권고 없음 — 둘 다 추적만 유지.**
 
-- **INDEX 상태 제안:** 012는 `active` 유지(라이브 후보 진행 중)하되, **세 딜 모두 실거래 진입 권고 없음.** KTF는 06-07 재검토로 NO ENTRY 더 단단해짐(디레버리지 반증). NFJ는 +EV 경로가 협소하게 존재함을 명문화했으나 진입 게이트(D 실측+SC TO-I) 미충족으로 추적만. 최종 판정은 validation/friction 통과 후.
+- **INDEX 상태 제안:** 012는 `active` 유지(라이브 후보 추적 중). 세 딜 모두 실거래 진입 권고 없음. KTF NO ENTRY / NFJ 추적만 / CPRX 기각(코어) 그대로. 최종 판정은 validation/friction 통과 후.
 
 - **다음 단서:**
   1. **🔑 코어 적격 재정의:** "현금 수렴"을 코어 기준에서 빼고 **"수렴 대상 NAV의 고정성(duration ≈ 0)"**을 코어 1차 게이트로 명문화. → 채권형 CEF는 *무레버리지·단기듀레이션·청산임박* 셋을 다 만족해야 코어 후보. (KTF는 셋 다 위반 + 레버리지 *연장*으로 확인사살.)
   2. **무레버리지·단기 muni 청산 CEF 탐색:** KTF의 반례가 가리키는 *진짜* 후보 = 듀레이션 짧고 레버리지 없는 청산확정 CEF(예: term trust 만기 임박 단기채). 이런 게 있으면 014에 준하는 near-arb.
-  3. **KTF 실시간 할인 데이터 확보 우선순위:** cefconnect/cefdata 일일 할인 — STALE_DISCOUNT/DISCOUNT_UNMEASURABLE flag 해소·확정의 유일 경로. **단 원격 403으로 차단 → 운영자 로컬 환경에서만 취득 가능.** data-scout에 로컬 폴백 요청.
-  4. **NFJ 진입 게이트 명문화:** ⓐ SC TO-I 확정 + ⓑ 진입 할인 D 실측 ≳ 5%(세후 boundary D>1%+FX/0.195≈3.6%, 안전마진 포함 5%) 둘 다 통과 시에만 *위성 소액* 25% 즉시실현 다리 재검토. 75% 잔여 다리는 EV 0 취급.
+  3. **KTF/NFJ 실시간 할인 데이터 확보 우선순위:** cefconnect/cefdata 일일 할인 — STALE_DISCOUNT/DISCOUNT_UNMEASURABLE flag 해소·확정의 유일 경로. **단 원격 403으로 차단 → 운영자 로컬 환경에서만 취득 가능.** data-scout에 로컬 폴백 요청(양 딜 공통 병목).
+  4. **NFJ 진입 게이트 명문화:** ⓐ SC TO-I 확정 + ⓑ 진입 할인 D 실측 ≳ 5%(세후 boundary D>1%+FX/0.195≈3.6%, 안전마진 포함 5%) 둘 다 통과 시에만 *위성 소액* 25% 즉시실현 다리 재검토. 75% 잔여 다리는 EV 0 취급. Saba standstill 조건부성(결제 미발생 시 소멸)도 모니터.
   5. **CPRX/NFJ는 forward 페이퍼 *관측 표본*으로만 대장 등재**(진입 없음) — 011 §판정과 일관.

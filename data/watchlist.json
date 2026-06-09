@@ -43,12 +43,21 @@
           "annualized": null,
           "days_left": 175,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-09",
+          "price": 9.19,
+          "price_source": "stale_2nd_source($9.19@2026-02-18 불변, 4개월 묵음); 라이브 NAV/할인 13개월째 403(cefconnect/cefdata/stockanalysis 전부 차단). data-scout 06-09: VMTPS 상환 11-10-26/백스톱 05-10-27 *연장* 재확인, 월분배 $0.0610 불변, 청산 record date 미공시.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 174,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 3,
+        "days_tracked": 4,
         "buy_since": null,
-        "note": "days_tracked=3 도달했으나 확신게이트 #3(레드팀 통과) 미충족 → buy 졸업 불가. NO ENTRY 유지·강화(레드팀 06-08). 레버리지(VMTPS) 상환 11-10-26/05-10-27 *연장*으로 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 신규: 5월 분배 일부 ROC 추정→캐리 알파 추가 약화. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
+        "note": "days_tracked=4. 레드팀 06-09 재검토: 🔴NO_ENTRY 유지(변화 없음). 확신게이트 #3(레드팀 통과) 미충족 → buy 졸업 불가. NO ENTRY 유지·강화(레드팀 06-08). 레버리지(VMTPS) 상환 11-10-26/05-10-27 *연장*으로 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 신규: 5월 분배 일부 ROC 추정→캐리 알파 추가 약화. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
       }
     },
     {
@@ -93,12 +102,21 @@
           "annualized": null,
           "days_left": 85,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-09",
+          "price": null,
+          "price_source": "data-scout 06-09: NAV $11.61@2026-06-05, 시장가 NAV 근접/소폭 프리미엄 → 진입할인 D≈0%(역사 -13.8%서 대폭 축소). SC TO-I 여전히 미개시(EDGAR엔 SC TO-C만). +EV 게이트 ⓐ D≳5% 명백 미충족.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 84,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 3,
+        "days_tracked": 4,
         "buy_since": null,
-        "note": "days_tracked=3 도달했으나 확신게이트 ⓐ(SC TO-I 확정) 미충족 → buy 졸업 불가, 추적 유지. tender가 ~9/1까지 안 열려 잡을 라이브 다리가 없음. 25% 안분 즉시실현 다리만 +EV(잔여 75%는 EV 0), 1회 이벤트 총자본 대비 ~+0.78%. 신규 꼬리: Saba standstill이 10-21 결제 미발생 시 소멸(이벤트 조건부성↑). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 진입할인 D≳5% 동시 충족시 위성 소액 재검토. 현재 진입 권고 없음."
+        "note": "days_tracked=4. 레드팀 06-09: 🟡조건부-추적만 유지(변화 없음). 신규 악재: 할인 D≈0%(NAV $11.61 근접)로 +EV의 핵심 다리(25% 즉시실현)조차 음수권 — tender 열려도 현 가격대론 무메리트. 확신게이트 ⓐ(SC TO-I 확정)+ⓑ(D≳5%) 둘 다 미충족 → buy 졸업 불가, 추적 유지. tender가 ~9/1까지 안 열려 잡을 라이브 다리가 없음. 25% 안분 즉시실현 다리만 +EV(잔여 75%는 EV 0), 1회 이벤트 총자본 대비 ~+0.78%. 신규 꼬리: Saba standstill이 10-21 결제 미발생 시 소멸(이벤트 조건부성↑). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 진입할인 D≳5% 동시 충족시 위성 소액 재검토. 현재 진입 권고 없음."
       }
     },
     {
@@ -207,12 +225,53 @@
           "annualized": null,
           "days_left": 7,
           "status": "drop"
+        },
+        {
+          "date": "2026-06-09",
+          "price": 23.45,
+          "price_source": "data-scout 06-09: SC TO-T 05-18 제출, 이사회 추천, drop-dead 7/12, 발표시 $23.34→수렴. 스프레드 ~0.2~0.7%(stale). 만기 6/15 임박.",
+          "spread_pct": 0.21,
+          "annualized": null,
+          "days_left": 6,
+          "status": "drop"
         }
       ],
       "conviction": {
         "days_tracked": 1,
         "buy_since": null,
-        "note": "기각 유지. $23.45 vs $23.50 = 잔여 0.2% 사실상 수렴 완료(만기 8일). 신규 진입 메리트 0. 만기 6/15 후 closed 처리 예정. 진입 권고 없음."
+        "note": "기각 유지. $23.45 vs $23.50 = 잔여 0.2% 사실상 수렴 완료(만기 6/15, 6일). 신규 진입 메리트 0. 만기 6/15 후 closed 처리 예정. 진입 권고 없음."
+      }
+    },
+    {
+      "id": "OPTU-csc-oddlot-tender",
+      "ticker": "OPTU",
+      "market": "US",
+      "type": "odd_lot",
+      "deal_price": 2.50,
+      "deadline": "2026-06-30",
+      "source_url": "https://www.businesswire.com/news/home/20260601502802/en/Optimum-Subsidiary-Announces-Launch-of-Tender-Offer-for-Shares-of-Optimums-Class-A-Common-Stock",
+      "added": "2026-06-09",
+      "status": "drop",
+      "redteam": {
+        "verdict": "NO_ENTRY",
+        "date": "2026-06-09",
+        "flag": "COERCIVE_LME(순수 self-tender 아님 — 구 Altice USA/Cablevision $21.8B 부실채무 LME. 05-29 우량자산[Optimum East Cable+Lightpath]을 신설 unrestricted sub CSC Investments II로 드롭다운[J.Crew/Serta류 자산격리], 그 SPV가 비계열 소액주주를 $2.50에 청산); CONTINGENT_ON_CREDITOR_DEAL(텐더가 채권자단 99% 재조정 성공에 우발적, 비응모 잔여주는 2027 만기절벽·Ch11서 통상 휴지); MARKET_PRICES_40PCT(시장가 $1.16=$2.50의 46%=시장이 체결확률 ~40%대로 가격 → +115% 갭은 알파 아닌 deal-break 보험료); ODDLOT_EXEMPTION_USELESS(안분만 제거, 체결확률[협상결렬·사해이전소송 금지·SPV 카운터파티 디폴트]은 못 올림); EV≈0(체결분기 99주 +$132[₩18만] vs 무산분기 -$50~-110, 위험조정 EV≈0)"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-09",
+          "price": 1.16,
+          "price_source": "2차출처 다수 교차(BusinessWire/StockTitan/Morningstar/Kalkine/gurufocus). 라이브 ~$1.16 vs 발표직전 $0.658@2026-05-29. SC TO-I 원문은 sec.gov 403로 직접 미확인.",
+          "spread_pct": 53.6,
+          "annualized": null,
+          "days_left": 21,
+          "status": "drop"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "day-0 편입 즉시 레드팀 🔴NO_ENTRY → drop(기각논리 보존). 53.6% '스프레드'는 알파 아닌 deal-break 보험료(시장이 체결확률 ~40%대로 가격). odd-lot 안분면제는 체결확률 못 올림 → 위험조정 EV≈0. 010 게이트가 정확히 걸러낸 forward 검증 1건(G1 보강: 발행사가 LME/부실 중이면 스킵; G4 보강: 시장가<매입가 70%면 자동스킵). 6/30 만기 후 closed 처리. 진입 권고 없음."
       }
     }
   ]
