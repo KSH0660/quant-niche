@@ -52,12 +52,21 @@
           "annualized": null,
           "days_left": 174,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-10",
+          "price": 9.16,
+          "price_source": "data-scout 06-10: 시장가 $9.16(Yahoo snippet, 당일 6/10 11:14 EDT — 라이브 근접). NAV/할인 여전히 측정불가(cefconnect/cefdata 403, 13개월째). 신규 청산 record date/디레버리지 공시 없음. VMTPS rate-period 만기 11-10-26/조기상환 05-10-27 불변.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 173,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 4,
+        "days_tracked": 5,
         "buy_since": null,
-        "note": "days_tracked=4. 레드팀 06-09 재검토: 🔴NO_ENTRY 유지(변화 없음). 확신게이트 #3(레드팀 통과) 미충족 → buy 졸업 불가. NO ENTRY 유지·강화(레드팀 06-08). 레버리지(VMTPS) 상환 11-10-26/05-10-27 *연장*으로 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 신규: 5월 분배 일부 ROC 추정→캐리 알파 추가 약화. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
+        "note": "days_tracked=5. 레드팀 06-10 재확인: 🔴NO_ENTRY 유지(신규사실 없음). 확신게이트 #3(레드팀 통과) 미충족 → buy 졸업 불가. NO ENTRY 유지·강화(레드팀 06-08). 레버리지(VMTPS) 상환 11-10-26/05-10-27 *연장*으로 청산 직전·이후까지 풀가동 → '청산임박 디레버리지로 좌측꼬리 완화' 가설 사망. 신규: 5월 분배 일부 ROC 추정→캐리 알파 추가 약화. 듀레이션 좌측꼬리 + 할인측정불가(403) 두 기둥 그대로. dead-on-arrival, 단일 재검토 게이트(운영자 로컬IP 실시간 할인 실측)만 형식상 유지. 진입 금지."
       }
     },
     {
@@ -111,12 +120,21 @@
           "annualized": null,
           "days_left": 84,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-10",
+          "price": 13.97,
+          "price_source": "data-scout 06-10: 시장가 ~$13.97(stockanalysis snippet @2026-04-22, ~7주 stale). 할인율 상충 — 06-09 실측 NAV $11.61@06-05(D≈0%) vs 06-10 snippet ~-13.82%(일자불명/stale). 라이브 미측정(403). SC TO-I 여전히 미개시(SC TO-C만, ~9/1 예정). Saba standstill 2028 proxy까지 불변.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 83,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 4,
+        "days_tracked": 5,
         "buy_since": null,
-        "note": "days_tracked=4. 레드팀 06-09: 🟡조건부-추적만 유지(변화 없음). 신규 악재: 할인 D≈0%(NAV $11.61 근접)로 +EV의 핵심 다리(25% 즉시실현)조차 음수권 — tender 열려도 현 가격대론 무메리트. 확신게이트 ⓐ(SC TO-I 확정)+ⓑ(D≳5%) 둘 다 미충족 → buy 졸업 불가, 추적 유지. tender가 ~9/1까지 안 열려 잡을 라이브 다리가 없음. 25% 안분 즉시실현 다리만 +EV(잔여 75%는 EV 0), 1회 이벤트 총자본 대비 ~+0.78%. 신규 꼬리: Saba standstill이 10-21 결제 미발생 시 소멸(이벤트 조건부성↑). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 진입할인 D≳5% 동시 충족시 위성 소액 재검토. 현재 진입 권고 없음."
+        "note": "days_tracked=5. 레드팀 06-10: 🟡조건부-추적만 유지(변화 없음). 할인율 상충(06-09 실측 NAV $11.61→D≈0% vs 06-10 snippet -13.8%/일자불명)=라이브 미측정 노이즈 → 보수적으로 D 미확정 취급. SC TO-I 여전히 미개시(SC TO-C만, ~9/1 예정)로 게이트 ⓐ 명백 미충족 → 할인 상충과 무관하게 buy 졸업 불가. 25% 안분 즉시실현 다리만 +EV(잔여 75% EV 0, 1회 총자본 ~+0.78%). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 D≳5% 동시충족시 위성 소액 재검토. 현재 진입 권고 없음."
       }
     },
     {
@@ -124,7 +142,7 @@
       "ticker": "CPRX",
       "market": "US",
       "type": "merger_cash",
-      "deal_price": 31.50,
+      "deal_price": 31.5,
       "deadline": "2026-11-06",
       "source_url": "https://www.stocktitan.net/sec-filings/CPRX/prem14a-catalyst-pharmaceuticals-inc-preliminary-merger-proxy-stateme-68cf123c664b.html",
       "added": "2026-06-06",
@@ -137,7 +155,7 @@
       "snapshots": [
         {
           "date": "2026-06-06",
-          "price": 31.10,
+          "price": 31.1,
           "price_source": "2차출처(검색시점). 스프레드 ~1.3%.",
           "spread_pct": 1.29,
           "annualized": 3.1,
@@ -156,7 +174,7 @@
       "ticker": "CZR",
       "market": "US",
       "type": "merger_cash",
-      "deal_price": 31.00,
+      "deal_price": 31.0,
       "deadline": "2027-05-27",
       "source_url": "https://www.stocktitan.net/sec-filings/CZR/8-k-caesars-entertainment-inc-reports-material-event-b58bd350abef.html",
       "added": "2026-06-06",
@@ -188,7 +206,7 @@
       "ticker": "ASRT",
       "market": "US",
       "type": "merger_cash",
-      "deal_price": 23.50,
+      "deal_price": 23.5,
       "deadline": "2026-06-15",
       "source_url": "https://www.sec.gov/Archives/edgar/data/0001808665/000110465926063190/tm2614877d1_ex99-a1a.htm",
       "added": "2026-06-06",
@@ -247,7 +265,7 @@
       "ticker": "OPTU",
       "market": "US",
       "type": "odd_lot",
-      "deal_price": 2.50,
+      "deal_price": 2.5,
       "deadline": "2026-06-30",
       "source_url": "https://www.businesswire.com/news/home/20260601502802/en/Optimum-Subsidiary-Announces-Launch-of-Tender-Offer-for-Shares-of-Optimums-Class-A-Common-Stock",
       "added": "2026-06-09",
@@ -272,6 +290,38 @@
         "days_tracked": 1,
         "buy_since": null,
         "note": "day-0 편입 즉시 레드팀 🔴NO_ENTRY → drop(기각논리 보존). 53.6% '스프레드'는 알파 아닌 deal-break 보험료(시장이 체결확률 ~40%대로 가격). odd-lot 안분면제는 체결확률 못 올림 → 위험조정 EV≈0. 010 게이트가 정확히 걸러낸 forward 검증 1건(G1 보강: 발행사가 LME/부실 중이면 스킵; G4 보강: 시장가<매입가 70%면 자동스킵). 6/30 만기 후 closed 처리. 진입 권고 없음."
+      }
+    },
+    {
+      "id": "IMXI-westernunion-merger",
+      "ticker": "IMXI",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 16.0,
+      "deadline": "2026-08-10",
+      "source_url": "https://www.stocktitan.net/sec-filings/IMXI/8-k-international-money-express-inc-reports-material-event-8741469abae4.html",
+      "added": "2026-06-10",
+      "status": "tracking",
+      "redteam": {
+        "verdict": "🟡 조건부-위성(라이브 가격 확인 시 진입검토, 코어 아님)",
+        "date": "2026-06-10",
+        "flag": "REGULATORY_CLEARED(HSR 2025-10-06 만료·second request 없음→운영자 반독점 우려 구조적 완화); NARROW_BREAK_PATH(잔여 무산경로=단일 주 money-transmitter 라이선스 1건, 대부분 주 이미 수령→CZR 게이밍 divestiture 비청정과 정반대); VOTE_PASSED(주주 99.97% 승인); ANNUALIZED_PASS(세후 net 연율 ~9.9%[5M]~24%[2M] > 허들 7.3%); NEGSKEW_GAPDOWN(unaffected $9.28→무산시 -34~39%, 손익분기 무산확률 14.6% vs 잔여~5%); SINGLE_DEAL_NO_DIVERSIFICATION(011 §2-C 15~20딜 분산 보호 전무, 위성 단일베팅); LIVE_PRICE_UNVERIFIED+LATE_ENTRY($15.12=06-01 stale, par 근접해 잔여스프레드 소멸 가능→라이브 호가/ADV/잔여스프레드 실측 전 진입불가); SATELLITE_NOT_CORE"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-10",
+          "price": 15.12,
+          "price_source": "data-scout 06-10 WebSearch(businesswire/stocktitan, $15.12@2026-06-01 stale ~9일). 라이브가 클라우드 403 미확보. gross ~5.8%($0.88/$16.00).",
+          "spread_pct": 5.82,
+          "annualized": null,
+          "days_left": 61,
+          "status": "tracking"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "days_tracked=1. 레드팀 06-10: 🟡조건부-위성. 011 유니버스 최초로 게이트(연율 PASS+규제청정+HSR클리어+표결통과) 실제 통과한 개별딜. 그러나 확신게이트 #1(≥3일 추적) 미충족 day-1 + LIVE_PRICE_UNVERIFIED($15.12 06-01 stale, par 근접 시 잔여스프레드 소멸 가능) + 음의왜도 단일딜(분산 0) → buy 졸업 불가, 추적 유지. 진입 전제조건: ①라이브 호가로 잔여 gross 스프레드 ≥4% 실측 확인 ②≥3일 안정 추적 ③friction 위성 사이징. 코어 아님(위성). 현재 진입 권고 없음."
       }
     }
   ]
