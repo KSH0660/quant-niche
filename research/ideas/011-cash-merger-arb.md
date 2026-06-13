@@ -6,7 +6,7 @@
 - **상태**: parked (1군 near-arb로 발제 — forward 페이퍼 추적 권고, 단 active 승격은 페이퍼 N건 통과 후)
 - **소액 친화성**: 높음 (무료 데이터 SEC EDGAR DEFM14A/8-K로 인수가·클로징조건 추적, 현금딜은 숏 헤지 불요 → 개인 킬러 #2(공매도 제약) 회피)
 - **타깃 시장/자산**: 미국 상장 **현금 인수 대상주(target common)**. 주식교환(stock-for-stock)·혼합딜 제외 — 순수 현금딜만(숏 헤지가 필요한 stock deal은 개인 부적격). 한국은 보조(아래 §1 한국 한계).
-- **마지막 업데이트**: 2026-06-12
+- **마지막 업데이트**: 2026-06-13
 - **담당 흐름**: hunter ☑ · data-scout ☑ · red-team ☑ · validation ☑ · friction ☑
 
 ---
@@ -216,7 +216,7 @@
 
 ### 딜 5 — BHF (Brighthouse Financial / Aquarian Capital 현금 인수 $70.00) [신규 후보 · 첫 레드팀]
 
-**사실관계(웹확인 06-12):** Aquarian Capital 계열이 BHF를 **all-cash $70.00/주** 인수(2025-11-06 발표). 총 ~**$4.1B**. unaffected $51.09(2025-01-27) → **37% 프리미엄**. **주주 합병 승인 완료(2026-02-12).** **financing = committed + financing은 closing의 condition precedent *아님***(BHF/Aquarian 보험사업에 incremental debt 없이 조달 — financing break 위험 계약상 제거, 강점). **잔여 = 반독점(HSR) + 보험 규제 승인(multi-state insurance department, Form A change-of-control)**. 클로징 **"2026년 중"(정확 일자 미정).** 라이브가 미확보(403) → **스프레드 미상.**
+**사실관계(웹확인 06-12):** Aquarian Capital 계열이 BHF를 **all-cash $70.00/주** 인수(2025-11-06 발표). 총 ~**$4.1B**. unaffected $51.09(2025-01-27) → **37% 프리미엄.** **주주 합병 승인 완료(2026-02-12).** **financing = committed + financing은 closing의 condition precedent *아님***(BHF/Aquarian 보험사업에 incremental debt 없이 조달 — financing break 위험 계약상 제거, 강점). **잔여 = 반독점(HSR) + 보험 규제 승인(multi-state insurance department, Form A change-of-control)**. 클로징 **"2026년 중"(정확 일자 미정).** 라이브가 미확보(403) → **스프레드 미상.**
 
 - **🟢 Steelman (최강 옹호):**
   - **011 §2-D 게이트의 *재무*축을 강하게 통과.** all-cash ✅, financing committed + **condition precedent 아님** ✅ (CZR LBO보다, 심지어 대다수 PE딜보다 *우월* — 자금조달 결렬 채널이 계약상 닫힘), 주주승인 완료(거버넌스 게이트 통과) ✅. **잔여가 순수 규제(반독점+보험)로 수렴** — 인수자 의지·자금은 확정.
@@ -238,24 +238,71 @@
 
 ---
 
-### 라이브 딜 레드팀 요약표 (2026-06-06 + 06-10 IMXI + 06-12 BHF/IMXI재검토)
+## 3-LIVE4. 레드팀 — 2026-06-13 (IMXI day-3 재검토 · BHF 재검토 · AES 신규)
+
+> **데이터 신선도 한계 명시 (06-13):** 라이브 가격피드 여전히 미확보(403). IMXI는 TradingView 무일자 스니펫 $15.81(→스프레드 1.19%) vs stale $15.12@06-01(→5.5%)로 *두 값이 충돌하며 어느 쪽도 라이브로 단정 불가*. BHF $62.79(종가~06-12), AES $14.68(06-12)는 비교적 신선하나 호가/ADV·정확 일자 미검증. 규제·표결 상태는 직전 레드팀(06-10/06-12) 확인분 + 본 브리프 제공 팩트에 의존. **본 실행에서 추가 WebSearch 미수행** — 제공 팩트만으로 추론. 진입 권고는 *실시간 호가 확인 후*에만 유효.
+
+### 딜 4-ter — IMXI day-3 재검토 (운영자 핵심질문: 스프레드 1.19% 붕괴 가능성 + 라이브 미확보 지속 → buy 졸업 가능한가?)
+
+**06-13 갱신 사실:** ① 규제·표결 상태 불변 — HSR 만료·주주승인 99.97%·국제규제 완료, **잔여 = 미국 1개 주 라이선스 1건**(Q1 10-Q 재확인), 2분기 클로징 목표. ② Outside date 2026-08-10(만기 58일), 최종 2026-11-10 연장가능. ③ **라이브가 충돌**: TradingView 무일자 $15.81(gross **1.19%**) vs stale $15.12@06-01(gross 5.5%). ④ 추적 day-3(06-10·06-12·06-13). ⑤ 무산 시 unaffected ~$9.28 → −40%대 갭다운.
+
+- **🟢 Steelman 갱신:** 무산경로(단일 주 라이선스)는 06-12 대비 추가로 deal-break 신호 없이 하루 더 버텼다 — 베이지안으로 잔여 무산확률은 ~3~4%로 미세 추가하락. *만약* 실제 라이브가 $15.81(1.19%)라면 이는 **시장이 클로징을 거의 확정으로 가격 중**이라는 강한 신호(par 근접 = 고확실 수렴). 즉 1.19%로의 스프레드 붕괴는 *나쁜 소식이 아니라 메커니즘이 정상 작동*한다는 증거 — 딜이 깨질 것 같으면 스프레드는 *넓어지지* 좁아지지 않는다.
+
+- **🔴 치명적 반론 (steelman을 무너뜨린다 — 이번엔 *진입메리트*가 죽는다):**
+  - **[RF-A · 운영자 핵심질문 직답 — 스프레드 1.19% 붕괴 시 잔여캐리가 허들 미달 → 진입 의미 *소멸*]** 만약 라이브가 $15.81(gross 1.19%)이면, 클로징까지 2개월(Q2 목표) 가정 시 연율 ~7.4%, FX 0.5%·22%세 차감 후 세후 net ~**(1.19−0.5)×0.78 = 0.54%/2개월 → 연 ~3.2%** → **확신게이트 허들 7.3% 명백 미달, T-bill 4.3%에도 미달.** 5개월(outside 연장) 가정이면 연율 ~2.9%로 *더* 악화. **즉 스프레드가 1.19%로 붕괴했다면 IMXI의 진입 알파는 *이미 차익거래자에게 먹혔고* 개인에겐 남은 게 없다 — ASRT형 LATE_ENTRY의 본격 발현.** 반대로 $15.12(5.5%)가 맞으면 세후 연율은 06-12 추정대로 통과하나, **두 값이 충돌하는 상태에서 게이트#2(순연율 실측)는 *구조적으로 평가 불가*** — 분자(gross)가 1.19%인지 5.5%인지 모르는데 연율 게이트를 통과시킬 수 없다. → flag: SPREAD_COLLAPSE_RISK 신설, ANNUALIZED_PASS *철회 보류*(입력 미확정).
+  - **[RF-B · 운영자 핵심질문 직답 — 라이브 미확보 지속 = 게이트#2 구조적 평가불가] day-3에 도달했어도 #2·#4 미충족이면 buy 졸업 *불가*다.** 확신게이트#1(연속 관측 ≥3일)은 06-10·06-12·06-13으로 *형식상 day-3 충족*이나 — (a) 06-11 스킵으로 "연속"의 질이 약하고, (b) **더 결정적으로 게이트#2(순연율 실측)는 라이브 gross가 1.19%/5.5%로 충돌해 *입력 자체가 미확정* → 평가 불가**, (c) 게이트#4(라이브 호가/슬리피지·ADV 실측) 역시 미해소(13일째 LIVE_PRICE_UNVERIFIED). **#1만 충족하고 #2·#4가 미충족이면 buy 졸업 불가** — 게이트는 AND 결합이며, 특히 #2는 진입의 *경제성 자체*라 미확정 시 진입은 정의상 근거 부재. → **day-3 도달했어도 졸업 불가. verdict: 추적 유지, 단 *진입검토 강도 하향*.**
+  - **[RF-C · 음의왜도 본체 불변 + 안전마진 악화] unaffected $9.28 → −40%대 갭다운.** 만약 스프레드가 1.19%로 붕괴했다면 손익분기 무산확률 g=1.19%, L=−40% → 손익분기 ~2.9%로 *오히려 빠듯*해진다 — **스프레드가 얇아지면 동일 갭다운에 대한 안전마진이 *줄어든다*.** 즉 스프레드 붕괴는 연율만 죽이는 게 아니라 **꼬리 대비 보상 비율도 악화**시킨다(1.19% 받자고 −40% 떠안기). 단일딜이라 분산 보호 전무.
+
+  > **딜 4-ter 종합 판정: 🟡 조건부(위성) *유지하되 진입검토 강도 하향* — 사실상 🔴 경계, buy 졸업 불가.** verdict: **조건부(위성) 유지, 단 진입 보류 강화.** 운영자 핵심질문 직답: **(1) 스프레드가 1.19%로 붕괴했으면 잔여캐리 허들(7.3%)·T-bill(4.3%) 둘 다 미달로 진입 의미 소멸(SPREAD_COLLAPSE/LATE_ENTRY), (2) 라이브 충돌($15.81 vs $15.12) 지속이면 게이트#2(순연율) 입력 미확정 → 구조적 평가 불가, (3) day-3 도달했어도 #2·#4 미충족이라 buy 졸업 불가**(게이트 AND 결합, #2=경제성 자체). 메커니즘·규제청정은 여전히 011 유니버스 최고지만 **진입 경제성이 라이브 미확보로 평가 불가능하고, 가용 스니펫($15.81)이 맞다면 알파는 이미 소멸**. → **추적은 유지(near-certain 수렴 표본·게이트 검증 가치)하나 신규 진입 권고는 철회 방향** — 라이브 호가가 *gross ≥4% AND 세후 연율 ≥7.3%로 실측 확인*될 때만 위성 진입검토 재개. **확신게이트 충족: #1 형식충족(day-3, 단 06-11 스킵)·#2 미충족(입력 미확정)·#4 미충족(LIVE_PRICE_UNVERIFIED 13일) → 종합 미충족, buy 졸업 불가.** flag: **REGULATORY_CLEARED(HSR), NARROW_BREAK_PATH(1-STATE), VOTE_PASSED, SPREAD_COLLAPSE_RISK(1.19%?), ANNUALIZED_UNRESOLVED(INPUT_CONFLICT), LIVE_PRICE_UNVERIFIED(13D/CONFLICT), CONFIDENCE_GATE2_UNMET, CONFIDENCE_GATE4_UNMET, NEGSKEW_GAPDOWN(−40%대), SINGLE_DEAL_NO_DIVERSIFICATION, SATELLITE_NOT_CORE.**
+
+### 딜 5-bis — BHF 재검토 (운영자 핵심질문: 10.3%는 알파인가 Form A 보험료인가? 클로징일 미정서 격상 가능한가?)
+
+**06-13 갱신 사실:** ① 신규 라이브가 **$62.79**(종가~06-12) → gross 스프레드 **10.3%**(4딜 중 최대). ② 클로징 "2026년 중" 여전히 미정. ③ Form A 주별 승인 공시 미확보. ④ 주주승인 완료·financing committed(condition precedent 아님) 불변. ⑤ 무산 시 unaffected $51.09 → −18.6% 갭다운.
+
+- **🟢 Steelman 갱신:** 라이브가 확보로 06-12의 "분자 미상" 약점 하나가 해소 — gross 10.3%는 4딜 중 최대. financing·거버넌스 게이트는 깨끗하고 주주승인 완료. *만약* 클로징이 2026-09(잔여 ~3개월)면 10.3%×4 ≈ 연 41%(세전), 세후로도 압도적. 즉 듀레이션이 짧게 풀리면 *이론상* 최고 수익 딜.
+
+- **🔴 치명적 반론 (steelman을 무너뜨린다 — 격상 불가):**
+  - **[RF-1 · 운영자 핵심질문 직답 — 10.3%는 알파가 아니라 *Form A 장기지연·조건부승인 위험프리미엄*이다]** 무차익원칙: 4딜 중 *가장 넓은* 스프레드는 4딜 중 *가장 큰 위험의 가격표*다(011 §3 역선택). IMXI(1개 주 행정 라이선스)가 1.19~5.5%인데 BHF가 10.3%인 것은 시장이 **multi-state 보험 Form A × PE-인수자 정밀심사 × 장기부채(변액연금) 보험사**라는 REGULATORY_LONG_TAIL을 *정확히 더 깊게 할인*하고 있다는 직접 증거다. 06-12 RF-1의 정성 논거를 라이브 스프레드가 *정량 확증* — 10.3%는 "개인에게 남겨진 알파"가 아니라 "보험 Form A 꼬리에 대한 시장의 정직한 가격". 개인이 이를 알파로 착각해 진입하면, *보험 규제를 개인보다 정확히 아는* 시장의 출구유동성이 된다.
+  - **[RF-2 · 운영자 핵심질문 직답 — 클로징일 미정 = 연율 분모 특정불가 = 격상 *구조적으로 불가*]** gross 10.3%가 확보됐어도 **연율 = gross/듀레이션의 *분모가 여전히 미정***이다. "2026년 중"이 2026-09면 연율 ~41%(격상 정당), 2026-12면 ~21%, 슬립해 2027-06이면 ~10%(허들 박빙), 2027말이면 ~7%(허들 미달). **즉 동일한 10.3%가 듀레이션에 따라 격상정당~허들미달을 모두 오간다 → 분모 미정 상태서 격상은 *계산 근거 없는 도박*.** 게다가 발표 2025-11·주주승인 2026-02인데 6월 현재도 종료일 미특정 = Form A가 *이미 장기화 중*이라는 약신호 → 분모가 짧게 풀릴 가능성에 베팅할 근거가 오히려 약하다. **클로징 일자(또는 최소한 Form A 주별 승인 진척 공시)가 특정되기 전 격상 불가.**
+  - **[RF-3 · 조건부승인 = gross가 실현 안 될 위험] Form A는 무산보다 *조건부승인*(추가 자본투입·배당제한·모회사 보증)이 지배적 출구 — 그 조건이 Aquarian 경제성을 훼손하면 재협상/가격조정 위험.** 즉 10.3% gross가 par($70)로 *온전히* 수렴 못 하고 중간에서 재협상될 좌측 시나리오도 존재(드물지만 보험 딜 특유). −18.6% 갭다운 꼬리와 별개의 *부분 손실* 채널.
+
+  > **딜 5-bis 종합 판정: 🔴 NO_ENTRY 유지 — watchlist tracking만, 격상 불가.** verdict: **부적격(코어·위성) 유지.** 운영자 핵심질문 직답: **(1) 10.3%는 알파가 아니라 multi-state 보험 Form A × PE-scrutiny × 장기부채 보험사라는 REGULATORY_LONG_TAIL의 위험프리미엄**(4딜 중 최대 스프레드 = 4딜 중 최대 규제꼬리, 라이브 스프레드가 06-12 정성논거를 정량확증), **(2) 클로징일 미정으로 연율 분모 특정 불가 → 동일 10.3%가 듀레이션에 따라 연 7~41%를 오가므로 격상은 계산근거 없는 도박**, **(3) 조건부승인 시 gross 미실현 위험.** 라이브가 확보로 "분자 미상"은 해소됐으나 **분모(듀레이션) 미정 + 그 넓은 분자 자체가 위험의 대가**라 격상 불가. **watchlist tracking 유지** — 보험 Form A 규제꼬리의 실제 수렴/지연/조건부승인 궤적을 라이브 학습할 1급 표본(011 단서3, 규제꼬리 스펙트럼 세 번째 극단). 격상은 **Form A 주별 승인 진척 공시 + 클로징 일자 특정 후 재판정** 시에만. **확신게이트 충족: 미충족(연율 분모 미정으로 게이트#2 입력 부재).** flag: **REGULATORY_LONG_TAIL(INSURANCE_MULTISTATE_FORMA), PE_ACQUIRER_HEIGHTENED_SCRUTINY, WIDE_SPREAD_IS_RISK_PRICE(10.3%), CLOSING_DATE_UNSPECIFIED(ANNUALIZE_IMPOSSIBLE), CONDITIONAL_APPROVAL_RISK, FINANCING_COMMITTED, VOTE_PASSED, NEGSKEW_GAPDOWN(−18.6%), WATCHLIST_TRACK_NOT_ENTER.**
+
+### 딜 6 — AES (AES Corp / GIP-BlackRock·EQT 컨소시엄 take-private $15.00) [신규 day-0 · 첫 레드팀]
+
+**사실관계(제공 팩트 06-13):** GIP(BlackRock)·EQT 컨소시엄이 AES를 **all-cash $15.00/주** take-private(발표 2026-03-02). 라이브가 **$14.68**(06-12) → gross **2.2%**. 마감 "late 2026 / early 2027". 규제 = **다수 주 PUC(공익사업위) + FERC + CFIUS**(컨소시엄에 QIA 등 외국인 참여). 유틸리티 대형 인프라 딜.
+
+- **🟢 Steelman:** all-cash·발표 후 3개월 경과로 초기 변동성 진정. BlackRock GIP·EQT는 자금력 충분한 대형 인프라 인수자(financing 신뢰도 높음). 유틸리티 take-private는 규제만 통과하면 메커니즘이 강건. gross 2.2%가 좁은 건 시장이 *클로징 확률을 높게* 보는 신호일 수 있다.
+
+- **🔴 치명적 반론 (steelman을 무너뜨린다):**
+  - **[RF-1 · 운영자 핵심질문 직답 — 2.2%를 6~10개월로 연율화하면 ~2.6~4.4% < 허들 = CZR형 ANNUALIZED 희석 함정] 마감 "late 2026/early 2027" = 발표 후 ~10~14개월, 현 시점(06-13)에서 잔여 ~6~10개월.** gross 2.2%를 6개월 연율화 = ~4.4%, 10개월 = ~2.6%. **세전조차 허들 7.3% 명백 미달, T-bill 4.3%에도 미달/박빙.** FX 0.5%·22%세 차감하면 세후 net 연율 ~2~3%로 *확실히 무위험 미달.* → **CZR ANNUALIZED_LT_GATE의 재현 — 좁은 스프레드 × 긴 듀레이션 = 연율 희석으로 게이트 미달.** 진입 경제성 없음.
+  - **[RF-2 · 운영자 핵심질문 직답 — 다수 주 PUC + FERC + CFIUS = 011 "규제청정" 하드게이트 명백 위반 + 장기지연 지배]** 유틸리티 인수는 **각 주 공익사업위(PUC)의 개별 승인** + 연방 FERC + **CFIUS(QIA 등 외국 국부펀드 참여로 국가안보 심사)**가 모두 걸린다 — 이는 IMXI(단일 주 행정), CZR(다주 게이밍), BHF(다주 보험 Form A)보다도 *광폭한* 복합 규제경로다. (a) 다주 PUC는 비동기·공청회·요금영향 심사로 가장 느린 채널, (b) **CFIUS는 외국인(QIA) 참여로 *불확실·비공개·조건부(완화조치)* 심사** — divest·거버넌스 제한 조건 가능, (c) FERC 시장지배력 심사. **011 §2-D ④ "규제청정" 명백 위반 — 장기지연이 지배 시나리오**이고 이것이 "late 2026/early 2027"이라는 *애초에 긴* 클로징의 근본 원인. 규제꼬리 스펙트럼의 *네 번째 극단*(다주 PUC + CFIUS).
+  - **[RF-3 · day-0 + 좁은 스프레드 = 진입 부적격, forward 표본 가치만] gross 2.2%는 무산 시 갭다운 대비 보상이 너무 얇다.** AES unaffected price 미제공이나 take-private 프리미엄 고려 시 무산 시 두 자릿수% 갭다운 추정 — 2.2% 받자고 그 좌측꼬리를 6~10개월(+CFIUS 불확실성) 떠안는 비대칭. day-0이고 규제 복합·연율 미달이라 진입검토 부적격.
+
+  > **딜 6 종합 판정: 🔴 NO_ENTRY — watchlist tracking 편입 권고(진입 부적격, day-0 drop 아님).** verdict: **부적격(코어·위성).** 운영자 핵심질문 직답: **(1) 2.2%를 6~10개월 연율화 = ~2.6~4.4% < 허들 7.3%, T-bill에도 미달 = CZR형 ANNUALIZED_LT_GATE(연율 희석 함정) 명백, (2) 다수 주 PUC + FERC + CFIUS(외국인 QIA) = 011 "규제청정" 하드게이트 명백 위반·장기지연 지배·CFIUS 불확실성, (3) day-0 + 좁은 스프레드라 비대칭 불리.** 진입 부적격이나 **day-0 drop이 아니라 watchlist tracking 편입 권고** — **유틸리티 take-private의 "다주 PUC + FERC + CFIUS(외국인 참여)" 규제 스펙트럼을 라이브 학습할 forward 표본**(011 단서2 규제꼬리 스펙트럼에 네 번째 극단 추가: IMXI 단일주 행정 / CZR 다주 게이밍+divest / BHF 다주 보험 Form A+PE / **AES 다주 PUC+CFIUS+외국인**). 편입 권고: **forward 페이퍼 watchlist 등재**(진입 아님). **확신게이트 충족: 미충족(연율 허들 미달 + 규제 비청정 + day-0).** flag: **ANNUALIZED_LT_GATE(2.6~4.4%), REGULATORY_NOT_CLEAN(MULTISTATE_PUC+FERC+CFIUS), CFIUS_FOREIGN_PARTICIPATION(QIA), CROWDED_NARROW_SPREAD(2.2%), DAY0, NEGSKEW_GAPDOWN, WATCHLIST_TRACK_NOT_ENTER.**
+
+---
+
+### 라이브 딜 레드팀 요약표 (2026-06-06 + 06-10 IMXI + 06-12 BHF/IMXI재검토 + 06-13 IMXI/BHF/AES)
 
 | 딜 | 유형 | gross/잔여 | 클로징/만기 | 세후net연율 | verdict | 핵심 flag | 코어? |
 |---|---|---|---|---|---|---|---|
 | **CZR** | merger_cash (LBO) | ~6.1% | 12~18개월(2027) | T-bill 미달 | 🔴 **기각** | ANNUALIZED_LT_GATE, REGULATORY_NOT_CLEAN, NEGSKEW_GAPDOWN(−29%), TICKING≠DOWNSIDE, CROWDED_ARB | 아니오 |
-| **ASRT** | merger_cash (tender) | ~0.x%(소멸) | 6/15(9일) | 음수 개연 | 🔴 **기각(진입메리트無)** | SPREAD_GONE, NET_CASH_95M, NEGSKEW_PHARMA | 아니오 |
-| **IMXI** | merger_cash (전략적) | ~5.8%(stale, 06-12 재확인) | 2~5개월(mid-2026, outside 11-10) | ~9.9~24% | 🟡 **조건부(위성)** 유지 | REGULATORY_CLEARED(HSR), NARROW_BREAK_PATH(1-STATE), VOTE_PASSED, ANNUALIZED_PASS, NEGSKEW(−34~39%), MERGER_AGREEMENT_TEXT_UNVERIFIED, LIVE_PRICE_UNVERIFIED(STALE_11D), CONFIDENCE_GATE1_UNMET(DAY2), SATELLITE_NOT_CORE | 아니오(위성) |
-| **BHF** | merger_cash (PE/보험) | 미상(라이브 미확보) | "2026년 중"(미정) | 계산불가 | 🔴 **NO_ENTRY(watchlist만)** | REGULATORY_LONG_TAIL(INSURANCE_MULTISTATE_FORMA), PE_ACQUIRER_HEIGHTENED_SCRUTINY, CLOSING_DATE_UNSPECIFIED, LIVE_PRICE_UNVERIFIED(NO_GROSS), FINANCING_COMMITTED, VOTE_PASSED, NEGSKEW(−20~27%), WATCHLIST_TRACK_NOT_ENTER | 아니오(부적격) |
+| **ASRT** | merger_cash (tender) | ~0.x%(소멸) | 6/15(만료) | 음수 개연 | 🔴 **기각(진입메리트無)** | SPREAD_GONE, NET_CASH_95M, NEGSKEW_PHARMA | 아니오 |
+| **IMXI** | merger_cash (전략적) | **1.19%(스니펫) vs 5.5%(stale) 충돌** | 2~5개월(mid-2026, outside 11-10) | 1.19%면 ~3.2%(미달)·5.5%면 ~9.9% | 🟡 **조건부(위성), 진입검토 강도↓**(06-13) | SPREAD_COLLAPSE_RISK, ANNUALIZED_UNRESOLVED, LIVE_PRICE_UNVERIFIED(13D/CONFLICT), CONFIDENCE_GATE2/4_UNMET, REGULATORY_CLEARED(HSR), NARROW_BREAK_PATH(1-STATE), NEGSKEW(−40%대), SATELLITE_NOT_CORE | 아니오(위성) |
+| **BHF** | merger_cash (PE/보험) | **10.3%(라이브 확보)** | "2026년 중"(미정) | 계산불가(분모 미정) | 🔴 **NO_ENTRY(watchlist만)** 유지 | WIDE_SPREAD_IS_RISK_PRICE(10.3%), REGULATORY_LONG_TAIL(INSURANCE_FORMA), PE_ACQUIRER_SCRUTINY, CLOSING_DATE_UNSPECIFIED, CONDITIONAL_APPROVAL_RISK, NEGSKEW(−18.6%), WATCHLIST_TRACK_NOT_ENTER | 아니오(부적격) |
+| **AES** | merger_cash (take-private) | **2.2%(라이브)** | late 2026/early 2027 | ~2~3%(미달) | 🔴 **NO_ENTRY(watchlist 편입)** 신규 | ANNUALIZED_LT_GATE(2.6~4.4%), REGULATORY_NOT_CLEAN(PUC+FERC+CFIUS), CFIUS_FOREIGN(QIA), CROWDED_NARROW_SPREAD, DAY0, WATCHLIST_TRACK_NOT_ENTER | 아니오(부적격) |
 | **NFJ** | cef partial tender | (012 참조) | 9월 예정 | (n/a) | 🟡 추적만(변동없음) | (012 §딜2 유지) | 아니오 |
 
 ## 판정 & 다음 단서
 <!-- active/rejected/parked. rejected이면 '왜 기각되었는지'와 '다음 탐색 단서'를 반드시 남긴다 (실패의 활용) -->
-- **판정**: **parked** (1군 near-arb로 발제 — forward 페이퍼 추적은 권고하나, 현 시드·무레버리지·한국세제에서 *일반 전략으로서의* active 승격은 불가). *단 IMXI는 011 유니버스 최초로 게이트(규제청정·연율·세후net)를 모두 통과한 개별딜 → 🟡 위성 진입검토 후보(06-12 재검토에서도 verdict 유지, 단 확신게이트 #1 미충족·라이브 미확보로 buy 졸업 불가).* CZR·ASRT·BHF는 진입 권고 없음 — 011 §판정과 일관.
-- **🧠 Opus 6단계 종합 판정 (2026-06-04, IMXI로 06-10 보강, BHF로 06-12 보강):** 011 현금 합병차익은 **1군 중 실행 마찰이 가장 낮은**(롱온리·절차無·절대금액 양호) 우아한 메커니즘이나, 010/014와 달리 **거대 arb 자본이 적극 참여하는 크라우디드 음의왜도 프리미엄**이라 *전략 일반*은 무레버리지·세후로 T-bill에 수렴/미달. **부활 경로는 "전략 전체"가 아니라 "§2-D 게이트를 실제로 통과하는 희소 개별딜의 선택적 위성 진입"**이다. **IMXI(06-10/06-12)는 그 단서1-c의 실증 사례(단기 듀레이션×규제청정×좁은 무산경로). BHF(06-12)는 반대 극단의 교훈** — financing·거버넌스가 IMXI만큼 깨끗해도 **잔여 규제 꼬리의 *성격*(multi-state 보험 Form A × PE-scrutiny)과 *듀레이션 미정*이 게이트 통과를 봉쇄**한다. 즉 **"규제청정"은 이분법이 아니라 스펙트럼**이다 — IMXI(단일주 행정), CZR(다주 게이밍+divestiture), BHF(다주 보험 Form A+PE심사)가 그 스펙트럼의 세 점이고, 게이트는 *규제 꼬리의 종류·다주성·듀레이션 특정 가능성*까지 봐야 한다(§2-D ④⑤ 정련).
-- **행동(권고, 승인 대기)**: **(전략 일반) 진입 없음 — 관망.** **(IMXI) 🟡 위성 진입검토 유지 — 단 확신게이트 #1 미충족·LIVE_PRICE_UNVERIFIED(11일 stale)로 현 시점 buy 졸업 불가.** 라이브 호가·ADV·잔여 스프레드 실측 + 연속 관측 ≥3일 충족 후에만 HUMAN_APPROVAL 큐에 극소 사이징(총자본 ≤3%, 단일딜이라 1.5~2% 권고) 권고안 등재. **(BHF) 🔴 watchlist 편입(tracking)만 — 진입검토 부적격**, 클로징 일자 특정 + 라이브 스프레드 확보 시 재판정. **forward 페이퍼 대장: IMXI(게이트통과 표본) 유지 + BHF(보험 Form A 규제꼬리 학습 표본) 신규 등재 + CZR(복합규제 리스크 표본).** 모두 *실거래 아님(HUMAN_APPROVAL·증권사 미연동).*
-- **kill criteria(요약)**: 세후 net < T-bill = backlog 강등 · 고품질 게이트 무산율 >8% = 게이트 폐기 · 단일 스트레스기 보유딜 ≥30% 동시무산 = PARK · **(IMXI) 잔여 스프레드 <4% 또는 "남은 주" 라이선스 거부·2차요청 신호 = 진입 철회** · **(BHF) 보험 Form A에서 state objection·조건부승인(추가자본/배당제한) 공시 = 즉시 부적격 확정.**
-- **기각 논리 / 다음 단서**: *기각 아님 — parked.* **다음 단서 4개(06-12 보강):**
-  1. **🔑 자본 규모 임계**: 011의 약점은 절대금액이 아니라 *수익률이 T-bill에 압축됨*이다. 부활 조건은 자본이 아니라 **(c) 무레버리지로도 T-bill+3%p가 남는 광폭·고품질 딜의 *희소* 출현**. ★IMXI가 단서1-c의 실증 사례. **단 CZR(긴 듀레이션→희석)·BHF(듀레이션 미정→게이트 입력 부재)가 보여주듯 "넓은 gross"≠"T-bill+3%p" — *gross가 아니라 연율 IRR*로, 그리고 *연율 IRR을 계산할 수 있느냐*로 게이트해야 한다(§2-D ⑤).**
-  2. **🔑 규제 꼬리의 스펙트럼화(06-12 신규)**: §2-D ④ "규제청정"을 이분법에서 *스펙트럼*으로 정련 — (i) 단일주 행정 라이선스(IMXI, 통과), (ii) 다주 게이밍+divestiture(CZR, 탈락), (iii) **다주 보험 Form A × PE-인수자 정밀심사(BHF, REGULATORY_LONG_TAIL)**. **보험·게이밍·은행 등 *주별 면허 산업*의 인수는 "수평결합 반독점"이 아니라 *주별 면허 change-of-control*이 진짜 꼬리**이며, multi-state·PE-acquirer일수록 장기지연·조건부승인 위험이 비선형 증가. → 향후 딜은 *인수자 유형(전략 vs PE)*과 *대상 산업의 면허 규제 다주성*을 게이트 변수로 추가.
-  3. **딜 품질 게이트의 forward 검증 가치**: "고품질 하드게이트가 실제 무산율을 3~5%로 낮추는가"는 페이퍼로 검증할 가치 — **IMXI=규제청정 정례, CZR=복합규제 반례, BHF=보험 Form A 장기꼬리 반례**로 게이트 예측력의 세 극단을 forward로 직접 학습.
+- **판정**: **parked** (1군 near-arb로 발제 — forward 페이퍼 추적은 권고하나, 현 시드·무레버리지·한국세제에서 *일반 전략으로서의* active 승격은 불가). *단 IMXI는 011 유니버스 최초로 게이트(규제청정·연율·세후net)를 모두 통과한 개별딜 → 🟡 위성 진입검토 후보였으나, 06-13 라이브 스니펫($15.81→1.19%) 등장으로 스프레드 붕괴 가능성이 부상해 진입검토 강도 하향(라이브 미확정으로 게이트#2 평가불가, buy 졸업 불가).* CZR·ASRT·BHF·AES는 진입 권고 없음 — 011 §판정과 일관.
+- **🧠 Opus 6단계 종합 판정 (2026-06-04, IMXI로 06-10 보강, BHF로 06-12 보강, AES·라이브확정으로 06-13 보강):** 011 현금 합병차익은 **1군 중 실행 마찰이 가장 낮은**(롱온리·절차無·절대금액 양호) 우아한 메커니즘이나, 010/014와 달리 **거대 arb 자본이 적극 참여하는 크라우디드 음의왜도 프리미엄**이라 *전략 일반*은 무레버리지·세후로 T-bill에 수렴/미달. **부활 경로는 "전략 전체"가 아니라 "§2-D 게이트를 실제로 통과하는 희소 개별딜의 선택적 위성 진입"**이다. **IMXI(06-10/06-12)는 그 단서1-c의 실증 사례(단기 듀레이션×규제청정×좁은 무산경로)였으나, 06-13에 스프레드 붕괴 가능성(1.19% 스니펫)이 부상하며 "고품질 딜도 스프레드가 par로 수렴해버리면 개인 진입창이 닫힌다"(LATE_ENTRY)는 새 교훈을 더했다.** BHF(06-12/06-13)는 반대 극단의 교훈 — financing·거버넌스가 IMXI만큼 깨끗하고 라이브 스프레드가 4딜 중 최대(10.3%)여도 **그 넓은 스프레드 자체가 규제꼬리(multi-state 보험 Form A × PE-scrutiny)의 가격이며, 듀레이션 미정으로 연율 게이트 입력이 부재**라 격상 불가. AES(06-13)는 *다주 PUC+FERC+CFIUS(외국인)*로 규제꼬리 스펙트럼의 네 번째 극단 + 좁은 스프레드×긴 듀레이션의 ANNUALIZED 함정 재현. 즉 **"규제청정"은 이분법이 아니라 스펙트럼**이다 — IMXI(단일주 행정), CZR(다주 게이밍+divest), BHF(다주 보험 Form A+PE), AES(다주 PUC+CFIUS+외국인)가 그 스펙트럼의 네 점이고, 게이트는 *규제 꼬리의 종류·다주성·외국인 참여·듀레이션 특정 가능성*까지 봐야 한다(§2-D ④⑤ 정련). **그리고 06-13의 새 교훈: gross가 좁아도(AES 2.2%·IMXI 1.19%?) 넓어도(BHF 10.3%) 게이트 통과가 안 되는 — *좁으면 연율 미달, 넓으면 위험의 대가* — "골디락스 스프레드"는 희소하다.**
+- **행동(권고, 승인 대기)**: **(전략 일반) 진입 없음 — 관망.** **(IMXI) 🟡 위성 진입검토 유지하되 강도 하향 — 확신게이트#2·#4 미충족·LIVE_PRICE 충돌($15.81 vs $15.12)로 현 시점 buy 졸업 불가, 1.19% 스니펫이 맞다면 알파 소멸(LATE_ENTRY).** 라이브 호가가 *gross ≥4% AND 세후 연율 ≥7.3%로 실측 확인*될 때만 HUMAN_APPROVAL 큐에 극소 사이징(총자본 ≤3%, 단일딜이라 1.5~2% 권고) 권고안 등재. **(BHF) 🔴 watchlist tracking 유지 — 격상 부적격**, Form A 주별 승인 진척 + 클로징 일자 특정 시 재판정. **(AES) 🔴 watchlist 편입(tracking) — 진입 부적격**, 규제꼬리 학습 표본으로 forward 페이퍼 등재. **forward 페이퍼 대장: IMXI(게이트통과→스프레드붕괴 표본) 유지 + BHF(보험 Form A 규제꼬리 표본) 유지 + AES(다주 PUC+CFIUS 표본) 신규 + CZR(복합규제 리스크 표본).** 모두 *실거래 아님(HUMAN_APPROVAL·증권사 미연동).*
+- **kill criteria(요약)**: 세후 net < T-bill = backlog 강등 · 고품질 게이트 무산율 >8% = 게이트 폐기 · 단일 스트레스기 보유딜 ≥30% 동시무산 = PARK · **(IMXI) 잔여 스프레드 <4% 또는 "남은 주" 라이선스 거부·2차요청 신호 = 진입 철회**(06-13 1.19% 스니펫이 라이브로 확인되면 이 기준에 *이미 해당* → 진입 철회) · **(BHF) 보험 Form A에서 state objection·조건부승인(추가자본/배당제한) 공시 = 즉시 부적격 확정** · **(AES) CFIUS mitigation 부과·주 PUC objection·클로징 2027 슬립 = 추적 강등.**
+- **기각 논리 / 다음 단서**: *기각 아님 — parked.* **다음 단서 5개(06-13 보강):**
+  1. **🔑 자본 규모 임계 + "골디락스 스프레드"의 희소성(06-13 정련)**: 011의 약점은 절대금액이 아니라 *수익률이 T-bill에 압축됨*이다. 부활 조건은 자본이 아니라 **(c) 무레버리지로도 T-bill+3%p가 남는 *광폭·고품질 AND 단기 듀레이션* 딜의 *희소* 출현**. ★IMXI가 단서1-c의 실증 후보였으나 06-13 스프레드 붕괴로 "고품질이어도 par 수렴 시 진입창이 닫힌다"는 한계 노출. **CZR·AES(좁은 gross×긴 듀레이션→연율 미달)·BHF(넓은 gross=규제꼬리 대가·듀레이션 미정→게이트 입력 부재)가 보여주듯 "넓은 gross"≠"통과" *gross가 아니라 연율 IRR*로, 그리고 *연율 IRR을 계산할 수 있느냐*로 게이트해야 한다(§2-D ⑤). 좁으면 연율 미달, 넓으면 위험의 대가 — 통과구간이 좁다.**
+  2. **🔑 규제 꼬리의 스펙트럼화(06-12 신규, 06-13 확장)**: §2-D ④ "규제청정"을 이분법에서 *스펙트럼*으로 정련 — (i) 단일주 행정 라이선스(IMXI, 통과), (ii) 다주 게이밍+divestiture(CZR, 탈락), (iii) 다주 보험 Form A × PE-인수자 정밀심사(BHF, REGULATORY_LONG_TAIL), (iv) **다주 PUC + FERC + CFIUS(외국인 참여)(AES, 규제 비청정 최광폭)**. **보험·게이밍·은행·유틸리티 등 *주별 면허/규제 산업*의 인수는 "수평결합 반독점"이 아니라 *주별 면허 change-of-control + (외국인 시) CFIUS*가 진짜 꼬리**이며, multi-state·PE/외국인-acquirer일수록 장기지연·조건부승인 위험이 비선형 증가. → 향후 딜은 *인수자 유형(전략 vs PE vs 외국인컨소시엄)*과 *대상 산업의 면허 규제 다주성·CFIUS 노출*을 게이트 변수로 추가.
+  3. **딜 품질 게이트의 forward 검증 가치**: "고품질 하드게이트가 실제 무산율을 3~5%로 낮추는가"는 페이퍼로 검증할 가치 — **IMXI=규제청정 정례, CZR=복합규제 반례, BHF=보험 Form A 장기꼬리 반례, AES=PUC+CFIUS 최광폭 반례**로 게이트 예측력의 네 극단을 forward로 직접 학습.
   4. **한국 현금 공개매수 모니터**: 한국 대형 현금 공개매수 발생 시 22% 세금 동일하나 FX 마찰 없어 재검토 가치 — DART 키 확보 시 보조 추적.
+  5. **🔑 라이브 가격피드 확보가 진입의 전제(06-13 신규)**: IMXI 사례가 보여주듯 LIVE_PRICE_UNVERIFIED가 13일째 지속되면 게이트#2(순연율) 평가가 *구조적으로* 불가하고, stale↔스니펫 충돌($15.12 vs $15.81)은 진입의 핵심 입력(gross)을 미확정으로 남긴다. **어떤 딜도 라이브 gross·호가·ADV가 실측되기 전엔 buy 졸업 불가** — 데이터 파이프라인(증권사 시세 연동) 확보가 011 위성 진입의 *선결 조건*임을 명시.
