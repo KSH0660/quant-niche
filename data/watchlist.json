@@ -201,12 +201,21 @@
           "annualized": null,
           "days_left": 77,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": null,
+          "price_source": "data-scout 06-17: 라이브 시장가/NAV/할인 **14일째 미확보**(stockanalysis/cefdata/cefa/yahoo 전부 403, 검색 스니펫도 당월 시장가/NAV 미산출). 참고: 6/15 ex-date 배당 $0.305, 과거 할인 ~13.8%(시점불명). SC TO-I 정식 미제출(SC TO-C 단계 추정). tender 개시 ~9/1·만료 ≤10/14, Saba standstill ~2028 proxy까지. NAV 데이터 공백 구조적 지속→할인율 검증 불가.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 76,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 10,
+        "days_tracked": 11,
         "buy_since": null,
-        "note": "days_tracked=9. 레드팀 06-15: 신규 딜팩트 없음(SC TO-I 미개시·일정 9/1~10/14 불변, Saba standstill 불변)→🟡조건부-추적만 이월. 라이브 NAV/할인 미측정 지속(403+yfinance 미설치)→게이트#2 구조적 평가불가. data-scout 권고: NFJ 사이징 전 작동하는 NAV/시세 소스 확보(yfinance 설치/stooq 화이트리스트) 필요. 레드팀 06-14: 신규사실 없음(SC TO-I 미개시·일정 9/1~10/14 불변)→🟡조건부-추적만 이월. 라이브가/NAV 미확보로 게이트#2 평가불가 지속. 할인율 검증불가(시장가 $13.36 vs 직전 NAV $11.61 산술상충=라이브 미측정 노이즈). 레드팀 06-12: 🟡조건부-추적만 유지(변화 없음). 할인율 상충(06-09 실측 NAV $11.61→D≈0% vs 06-10 snippet -13.8%/일자불명)=라이브 미측정 노이즈 → 보수적으로 D 미확정 취급. SC TO-I 여전히 미개시(SC TO-C만, ~9/1 예정)로 게이트 ⓐ 명백 미충족 → 할인 상충과 무관하게 buy 졸업 불가. 25% 안분 즉시실현 다리만 +EV(잔여 75% EV 0, 1회 총자본 ~+0.78%). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 D≳5% 동시충족시 위성 소액 재검토. 현재 진입 권고 없음."
+        "note": "days_tracked=11. 06-17: 라이브 NAV/할인 14일째 미확보(전 CEF 소스 403)→게이트#2(순연율/할인 실측) 구조적 봉쇄 지속·SC TO-I 미개시. data-scout 에스컬레이션: NFJ는 'CEF 할인율 검증불가'가 구조적—KTF(drop)와 동일한 '무료 데이터 재현불가' 위험에 근접. 현 시점 추적 유지하되, NAV 소스 미확보가 더 지속되면 헌법상 기각사유 검토. 현재 진입 권고 없음. (이하)레드팀 06-15: 신규 딜팩트 없음(SC TO-I 미개시·일정 9/1~10/14 불변, Saba standstill 불변)→🟡조건부-추적만 이월. 라이브 NAV/할인 미측정 지속(403+yfinance 미설치)→게이트#2 구조적 평가불가. data-scout 권고: NFJ 사이징 전 작동하는 NAV/시세 소스 확보(yfinance 설치/stooq 화이트리스트) 필요. 레드팀 06-14: 신규사실 없음(SC TO-I 미개시·일정 9/1~10/14 불변)→🟡조건부-추적만 이월. 라이브가/NAV 미확보로 게이트#2 평가불가 지속. 할인율 검증불가(시장가 $13.36 vs 직전 NAV $11.61 산술상충=라이브 미측정 노이즈). 레드팀 06-12: 🟡조건부-추적만 유지(변화 없음). 할인율 상충(06-09 실측 NAV $11.61→D≈0% vs 06-10 snippet -13.8%/일자불명)=라이브 미측정 노이즈 → 보수적으로 D 미확정 취급. SC TO-I 여전히 미개시(SC TO-C만, ~9/1 예정)로 게이트 ⓐ 명백 미충족 → 할인 상충과 무관하게 buy 졸업 불가. 25% 안분 즉시실현 다리만 +EV(잔여 75% EV 0, 1회 총자본 ~+0.78%). 8월 중순부터 SC TO-I 제출 모니터링 트리거. SC TO-I 개시 + 실측 D≳5% 동시충족시 위성 소액 재검토. 현재 진입 권고 없음."
       }
     },
     {
@@ -393,9 +402,9 @@
       "added": "2026-06-10",
       "status": "tracking",
       "redteam": {
-        "verdict": "🟡 조건부-위성 no-buy (06-16: 게이트#1·#2 입력 첫충족하나 #3 미통과로 졸업 불가)",
-        "date": "2026-06-16",
-        "flag": "REGULATORY_CLEARED(HSR/표결/UK_FCA/48개주)·FIVE_REMAINING_APPROVALS(美4주+Bank_of_Spain)·GRANT_PROGRESS_ZERO(06-16: 라이브가 2일 안정 $14.50/$14.52→게이트#1[day-6]·#2[gross10.3%→세후net 연율~18%(5M)~46%(2M)] 입력 첫충족·LIVE_PRICE 차단 해소. 그러나 56일물 클린딜이 10.3%를 *살려두는*=알파 아닌 위험의 가격[정상이면 ~1-2% 압축]. 시장이 잔여5건·grant진척 0건·outside date 1차경과[분모슬립]를 정확히 가격=역선택. 단일딜 -36%갭다운 분산 전무→레드팀 verdict#3 미통과[미해소 deal-break]로 buy 졸업 불가); WIDE_SPREAD_IS_RISK_PRICE(10.3%)·OUTSIDE_DATE_LAPSED·NEGSKEW(-36%)·SINGLE_DEAL·CONFIDENCE_GATE3_UNMET·SATELLITE_NO_BUY; (이하 06-15)WIDE_SPREAD_IS_RISK_PRICE(06-15: 13일만에 라이브가 2독립소스 확보 — Motley Fool $14.50[6/15 range 14.45~14.53]·Investing/CNBC ~$14.97, 둘다 sub-$15→gross 6.9~10.3%로 WIDENED. 1.19% 시나리오 REFUTED. 그러나 HSR완료·표결99.97%인 56일물 클린딜이 ~1-2%로 압축돼야 정상인데 7~10%가 *살아남음*=시장[주별 라이선스·스페인은행 진척을 개인보다 잘 추적하는 참여자 포함]이 '8/10 미클로징/지연/무산꼬리'에 베팅. 넓은 스프레드=알파크기 아닌 시장의 위험크기); DENOMINATOR_LENGTHENING(원 outside date ~5/11 LAPSED·가이던스 mid-2026→H2 2026 슬립=분모 늘어남 실측증거. 현실적 11/10[~148일] 연율 ~16%[허들 통과하나 steelman 43%의 3분의1], 2차 자동연장이면 추가 희석); TWO_REMAINING_APPROVALS(US_STATE+BANK_OF_SPAIN)·진척공시 0건; NEGSKEW(unaffected $9.28→break gap −31~36%, 단일딜 무분산, break-even break-prob ~16-22%); GATE2_NUMERATOR_KNOWN_QUOTE_UNVERIFIED(방향성 확인됐으나 정확 호가/ADV 미측정); GATE4_UNMET(승인 진척 0·outside date 슬립→경제성/사이징 불가); SATELLITE_NOT_CORE; (이하 06-14)TWO_REMAINING_APPROVALS(US_STATE+BANK_OF_SPAIN)(06-14 정정: 잔여가 '단일 주 1건'이 아니라 美 1개 주 + 스페인은행 2건 — '깨끗한 단일 규제' 내러티브 약화); OUTSIDE_DATE_LAPSED(원 outside date ~2026-05-11 1차 경과·자동연장 생존 추정→'예정보다 지연중' 약신호, 무산확률 베이지안 상향압력); REGULATORY_CLEARED(HSR 만료·국제규제 대부분); VOTE_PASSED(99.97%); NARROW_BREAK_PATH_CORRECTED(잔여 2건으로 정정); SPREAD_COLLAPSE_OR_UNVERIFIED(라이브가 사실상 미확보: TradingView 무일자 $15.81→gross 1.19%/세후연율~3.2%=허들7.3%·T-bill 둘다 미달[LATE_ENTRY] vs stale $15.12@06-01→5.5%, 둘 상충→게이트#2 입력 미확정); GATE2_UNEVALUABLE(라이브가 13일째 미확보→순연율 실측 구조적 불가→#2 미충족); GATE4_UNMET(경제성 미확정→사이징 불가); NEGSKEW_WORSENS(스프레드 얇아질수록 -40%대 꼬리 대비 안전마진 악화); KILL_IF_SPREAD_LT4(1.19% 라이브 확인되면 kill criteria 해당→진입 철회); SATELLITE_NOT_CORE"
+        "verdict": "🟡 조건부-위성 no-buy (06-17: de-risk 보고로 격상 *근접*하나 출처단일·라이브STALE로 ⓐⓑ 미확정→졸업 불가)",
+        "date": "2026-06-17",
+        "flag": "HSR_EXPIRED_CONFIRMED(1차)·DERISK_REPORTED_SINGLE_SOURCE(panabee '잔여1주'설)·DERISK_SINGLE_SOURCE_UNCONFIRMED(itemized grant 8-K 미확보·잔여 주 수 출처상충 1주 vs 4주+스페인→트리거ⓐ '교차검증된 다수 grant' 미충족)·GRANT_PROGRESS_ZERO_PARTIALLY_EASED(0건→방향성 완화)·LIVE_PRICE_STALE(6/17 미확보→트리거ⓑ 라이브 2소스 gross 실측 봉쇄→de-risk가 스프레드 좁혔는지 미판정)·WIDE_SPREAD_WEAKENED_NOT_REFUTED(위험가격 논리 약화되나 소멸 아님)·NEGSKEW_GAPDOWN(-36%·de-risk로도 단일딜 무분산 비대칭 불변)·SINGLE_DEAL·CONFIDENCE_GATE3_NEAR_NOT_MET; (이하 06-16)REGULATORY_CLEARED(HSR/표결/UK_FCA/48개주)·FIVE_REMAINING_APPROVALS(美4주+Bank_of_Spain)·GRANT_PROGRESS_ZERO(06-16: 라이브가 2일 안정 $14.50/$14.52→게이트#1[day-6]·#2[gross10.3%→세후net 연율~18%(5M)~46%(2M)] 입력 첫충족·LIVE_PRICE 차단 해소. 그러나 56일물 클린딜이 10.3%를 *살려두는*=알파 아닌 위험의 가격[정상이면 ~1-2% 압축]. 시장이 잔여5건·grant진척 0건·outside date 1차경과[분모슬립]를 정확히 가격=역선택. 단일딜 -36%갭다운 분산 전무→레드팀 verdict#3 미통과[미해소 deal-break]로 buy 졸업 불가); WIDE_SPREAD_IS_RISK_PRICE(10.3%)·OUTSIDE_DATE_LAPSED·NEGSKEW(-36%)·SINGLE_DEAL·CONFIDENCE_GATE3_UNMET·SATELLITE_NO_BUY; (이하 06-15)WIDE_SPREAD_IS_RISK_PRICE(06-15: 13일만에 라이브가 2독립소스 확보 — Motley Fool $14.50[6/15 range 14.45~14.53]·Investing/CNBC ~$14.97, 둘다 sub-$15→gross 6.9~10.3%로 WIDENED. 1.19% 시나리오 REFUTED. 그러나 HSR완료·표결99.97%인 56일물 클린딜이 ~1-2%로 압축돼야 정상인데 7~10%가 *살아남음*=시장[주별 라이선스·스페인은행 진척을 개인보다 잘 추적하는 참여자 포함]이 '8/10 미클로징/지연/무산꼬리'에 베팅. 넓은 스프레드=알파크기 아닌 시장의 위험크기); DENOMINATOR_LENGTHENING(원 outside date ~5/11 LAPSED·가이던스 mid-2026→H2 2026 슬립=분모 늘어남 실측증거. 현실적 11/10[~148일] 연율 ~16%[허들 통과하나 steelman 43%의 3분의1], 2차 자동연장이면 추가 희석); TWO_REMAINING_APPROVALS(US_STATE+BANK_OF_SPAIN)·진척공시 0건; NEGSKEW(unaffected $9.28→break gap −31~36%, 단일딜 무분산, break-even break-prob ~16-22%); GATE2_NUMERATOR_KNOWN_QUOTE_UNVERIFIED(방향성 확인됐으나 정확 호가/ADV 미측정); GATE4_UNMET(승인 진척 0·outside date 슬립→경제성/사이징 불가); SATELLITE_NOT_CORE; (이하 06-14)TWO_REMAINING_APPROVALS(US_STATE+BANK_OF_SPAIN)(06-14 정정: 잔여가 '단일 주 1건'이 아니라 美 1개 주 + 스페인은행 2건 — '깨끗한 단일 규제' 내러티브 약화); OUTSIDE_DATE_LAPSED(원 outside date ~2026-05-11 1차 경과·자동연장 생존 추정→'예정보다 지연중' 약신호, 무산확률 베이지안 상향압력); REGULATORY_CLEARED(HSR 만료·국제규제 대부분); VOTE_PASSED(99.97%); NARROW_BREAK_PATH_CORRECTED(잔여 2건으로 정정); SPREAD_COLLAPSE_OR_UNVERIFIED(라이브가 사실상 미확보: TradingView 무일자 $15.81→gross 1.19%/세후연율~3.2%=허들7.3%·T-bill 둘다 미달[LATE_ENTRY] vs stale $15.12@06-01→5.5%, 둘 상충→게이트#2 입력 미확정); GATE2_UNEVALUABLE(라이브가 13일째 미확보→순연율 실측 구조적 불가→#2 미충족); GATE4_UNMET(경제성 미확정→사이징 불가); NEGSKEW_WORSENS(스프레드 얇아질수록 -40%대 꼬리 대비 안전마진 악화); KILL_IF_SPREAD_LT4(1.19% 라이브 확인되면 kill criteria 해당→진입 철회); SATELLITE_NOT_CORE"
       },
       "snapshots": [
         {
@@ -451,12 +460,21 @@
           "annualized": null,
           "days_left": 55,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 14.5,
+          "price_source": "data-scout 06-17: 6/17 라이브가 미확보(전 시세 403)→6/16 $14.50가 최신, STALE. **신규(중요) 규제 de-risk**: panabee 집계 '美 51개 주/준주 승인 완료·잔여 단 1개 주만 pending·국제 송금 규제 전원 승인·HSR 만료 완료'(이전 '잔여 4주+스페인은행'서 대폭 진척). 단 단일 2차출처 집계(itemized grant 8-K 미확보)·잔여 주 수 출처간 상충(1주 vs 4주+스페인). gross는 STALE $14.50 기준 명목 10.3%이나 라이브 미측정.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 54,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 6,
+        "days_tracked": 7,
         "buy_since": null,
-        "note": "days_tracked=6(06-10 편입, 06-12~06-16). 레드팀 06-16: 🟡조건부-위성 no-buy 유지. 라이브가 2일 안정($14.50, 전일 $14.52)으로 게이트#1(day-6)·#2(gross 10.3%→세후 net 연율 ~18~46%) 입력 첫충족·LIVE_PRICE 차단 해소. 그러나 56일물 클린딜이 10.3%를 살려두는 건 알파 아닌 위험의 가격(정상이면 ~1-2% 압축)=시장이 잔여 5건(美4주+스페인은행)·grant진척 0건·outside date 1차경과를 정확히 가격. 단일딜 -36%갭다운 분산 전무→레드팀 verdict#3(deal-break 미해소) 미통과로 buy 졸업 불가. **진입 트리거(AND)**: ⓐ잔여 5건 중 다수 grant 공시(de-risk 진척) + ⓑ독립 2소스 gross 실측·슬리피지<1% + ⓒ세후 net 연율≥7.3% 유지 → 그때만 극소 위성(≤1.5~2%) HUMAN_APPROVAL 권고. 코어 아님. 현재 진입 권고 없음. (이하 06-15)레드팀 06-15(라이브가 신규확보 재판정): 🟡조건부-위성 유지·NO BUY. **기각사유 전환**: 06-13까지 'LATE_ENTRY(스프레드 붕괴 우려)'→06-15 '넓은 스프레드 자체가 위험의 가격'. 라이브가 2독립소스 sub-$15로 1.19% REFUTED·gross 6.9~10.3%로 WIDENED했으나, 이는 강세 아님 — HSR완료·표결완료된 56일물 클린딜이 ~1-2%로 압축돼야 정상인데 7~10% 생존=시장이 8/10 미클로징/지연/무산꼬리에 베팅(outside date 5/11 LAPSE·가이던스 H2슬립이 분모 늘어남 독립확증). 현실적 11/10 연율 ~16%(허들 통과하나 분모 슬립 진행형). 게이트#4 미충족(승인 진척 0건)→buy 졸업 불가. 진입재검토 트리거: 라이브 gross≥4% AND 세후연율≥7.3% AND 잔여 2승인 중 최소 1건 진척/완료(=시장 위험가격 과대 입증). 코어 아님(위성). 현재 진입 권고 없음. (이하 06-14)레드팀 06-14: 🟡조건부-위성 유지하되 진입보류 *추가강화*(사실상 🔴경계). 06-10 핵심강점 '극히 좁은 단일 규제'가 美 주+스페인은행 2건으로 정정→사실관계상 약화. outside date 1차 경과=지연 약신호. 라이브가 13일째 미확보→게이트#2(순연율) 구조적 봉쇄 지속. (이하 06-13 전제 유지) 확신게이트 #1(≥3일) 형식충족했으나 — 레드팀 06-13: 🟡조건부 유지하되 진입보류 *강화*(사실상 🔴경계). 라이브가 $15.81(무일자)이면 gross 1.19%→세후연율 ~3.2%=허들7.3%·T-bill 둘다 미달(LATE_ENTRY, 알파 소멸); stale $15.12면 5.5%. 둘 상충→게이트#2(순연율 실측) 입력 미확정=구조적 평가불가→#2·#4 미충족→buy 졸업 불가. 스프레드 얇아질수록 -40%대 꼬리 대비 안전마진 악화. 진입 전제 갱신: ①**라이브** 호가로 잔여 gross ≥4% AND 세후연율 ≥7.3% 동시 실측 ②안정 추적. 1.19%가 라이브로 확인되면 kill criteria(스프레드<4%)→진입 철회. 코어 아님(위성). 현재 진입 권고 없음."
+        "note": "days_tracked=7(06-10 편입, 06-12~06-17). 레드팀 06-17: 🟡조건부-위성 no-buy 유지·**격상 근접**. data-scout 신규 de-risk(panabee: 美 51주 승인·잔여 1주·국제전원·HSR완료)로 06-16의 'GRANT_PROGRESS_ZERO·잔여 5건'이 완화→verdict 격상 근접. 그러나 ①panabee 단일 2차출처 집계(잔여 주 수 1주 vs 4주+스페인 상충·itemized grant 8-K 미확보)→트리거ⓐ 미확정 ②6/17 라이브가 STALE→트리거ⓑ(라이브 2소스 gross 실측) 봉쇄=de-risk가 스프레드 좁혔는지 미판정 ③단일딜 -36% 무분산 불변→#3 미통과. **진입 트리거(06-17 강화·AND)**: ⓐ′잔여 주 grant를 1차출처(WU/IMXI IR·SEC 8-K) 또는 독립 2소스로 itemized 확인 + ⓑ6/17+ 라이브 독립 2소스 gross≥4%·슬리피지<1% + ⓒ세후 net 연율≥7.3%. kill: 잔여 주 거부/조건부·outside date 추가슬립·gross<4% 압축·1차출처 de-risk 반증. (이하 06-16)레드팀 06-16: 🟡조건부-위성 no-buy 유지. 라이브가 2일 안정($14.50, 전일 $14.52)으로 게이트#1(day-6)·#2(gross 10.3%→세후 net 연율 ~18~46%) 입력 첫충족·LIVE_PRICE 차단 해소. 그러나 56일물 클린딜이 10.3%를 살려두는 건 알파 아닌 위험의 가격(정상이면 ~1-2% 압축)=시장이 잔여 5건(美4주+스페인은행)·grant진척 0건·outside date 1차경과를 정확히 가격. 단일딜 -36%갭다운 분산 전무→레드팀 verdict#3(deal-break 미해소) 미통과로 buy 졸업 불가. **진입 트리거(AND)**: ⓐ잔여 5건 중 다수 grant 공시(de-risk 진척) + ⓑ독립 2소스 gross 실측·슬리피지<1% + ⓒ세후 net 연율≥7.3% 유지 → 그때만 극소 위성(≤1.5~2%) HUMAN_APPROVAL 권고. 코어 아님. 현재 진입 권고 없음. (이하 06-15)레드팀 06-15(라이브가 신규확보 재판정): 🟡조건부-위성 유지·NO BUY. **기각사유 전환**: 06-13까지 'LATE_ENTRY(스프레드 붕괴 우려)'→06-15 '넓은 스프레드 자체가 위험의 가격'. 라이브가 2독립소스 sub-$15로 1.19% REFUTED·gross 6.9~10.3%로 WIDENED했으나, 이는 강세 아님 — HSR완료·표결완료된 56일물 클린딜이 ~1-2%로 압축돼야 정상인데 7~10% 생존=시장이 8/10 미클로징/지연/무산꼬리에 베팅(outside date 5/11 LAPSE·가이던스 H2슬립이 분모 늘어남 독립확증). 현실적 11/10 연율 ~16%(허들 통과하나 분모 슬립 진행형). 게이트#4 미충족(승인 진척 0건)→buy 졸업 불가. 진입재검토 트리거: 라이브 gross≥4% AND 세후연율≥7.3% AND 잔여 2승인 중 최소 1건 진척/완료(=시장 위험가격 과대 입증). 코어 아님(위성). 현재 진입 권고 없음. (이하 06-14)레드팀 06-14: 🟡조건부-위성 유지하되 진입보류 *추가강화*(사실상 🔴경계). 06-10 핵심강점 '극히 좁은 단일 규제'가 美 주+스페인은행 2건으로 정정→사실관계상 약화. outside date 1차 경과=지연 약신호. 라이브가 13일째 미확보→게이트#2(순연율) 구조적 봉쇄 지속. (이하 06-13 전제 유지) 확신게이트 #1(≥3일) 형식충족했으나 — 레드팀 06-13: 🟡조건부 유지하되 진입보류 *강화*(사실상 🔴경계). 라이브가 $15.81(무일자)이면 gross 1.19%→세후연율 ~3.2%=허들7.3%·T-bill 둘다 미달(LATE_ENTRY, 알파 소멸); stale $15.12면 5.5%. 둘 상충→게이트#2(순연율 실측) 입력 미확정=구조적 평가불가→#2·#4 미충족→buy 졸업 불가. 스프레드 얇아질수록 -40%대 꼬리 대비 안전마진 악화. 진입 전제 갱신: ①**라이브** 호가로 잔여 gross ≥4% AND 세후연율 ≥7.3% 동시 실측 ②안정 추적. 1.19%가 라이브로 확인되면 kill criteria(스프레드<4%)→진입 철회. 코어 아님(위성). 현재 진입 권고 없음."
       }
     },
     {
@@ -470,9 +488,9 @@
       "added": "2026-06-12",
       "status": "tracking",
       "redteam": {
-        "verdict": "🔴 NO_ENTRY (watchlist 추적만, 격상 불가 — forward 표본)",
-        "date": "2026-06-14",
-        "flag": "ANNUALIZE_BOUNDED_NOT_DERISKED(06-14: outside date 9/6·연장12/26로 분모 상한 생겼으나 분모(시간)와 분자(위험)는 독립 — 10.3% 큰 이유가 곧 Form A 3주+PE정밀심사+FINRA 위험프리미엄. '6개월내 3주 전부통과' 가정이 베팅 전부인데 주별 승인진척 공시 0건); NY_DFS_SUSPENSIVE(NY DFS Form A는 suspensive·waiver불가→단일 주 거부로 딜 정지 가능); SPREAD_IS_RISK_PREMIUM(라이브가 $62.79 확보→gross 10.3%=4딜 중 최대인데, 이는 알파 아니라 multi-state 보험 Form A × PE-scrutiny × 장기부채 보험사 REGULATORY_LONG_TAIL의 위험프리미엄=최대 스프레드=최대 규제꼬리, 라이브가가 정량확증); CLOSING_DATE_UNDEFINED(클로징 '2026년 중' 미정→동일 10.3%가 듀레이션 따라 연 7~41% 진폭→분모 미정 상태서 격상은 계산근거 없는 도박); DELAY_DOMINATES_BREAK(무산보다 장기지연·조건부승인[추가자본/배당제한] 지배); FORM_A_PROGRESS_UNDISCLOSED(주별 승인 공시 미확보); GATE2_NO_DENOMINATOR(연율 분모 부재=#2 입력 부재); CORE_AND_SATELLITE_INELIGIBLE"
+        "verdict": "🔴 NO_ENTRY (watchlist 추적만 — 주총통과는 기정사실, verdict 불변)",
+        "date": "2026-06-17",
+        "flag": "SHAREHOLDER_VOTE_PASSED(99.7%_ALREADY_PRICED·통과후에도 gross 10.7% 미압축=주총은 시장이 이미 가격한 저위험 관문)·SPREAD_NOT_COMPRESSED_POST_VOTE·WIDE_SPREAD_IS_RISK_PRICE(10.7%)·REGULATORY_LONG_TAIL(INSURANCE_FORMA_DE/NY/MA)·NY_DFS_SUSPENSIVE·FINRA_1017·FORMA_PROGRESS_ZERO(진짜 병목·진척 0건)·PE_ACQUIRER_SCRUTINY·NEGSKEW(-18~27%)·SINGLE_DEAL; (이하 06-14)ANNUALIZE_BOUNDED_NOT_DERISKED(06-14: outside date 9/6·연장12/26로 분모 상한 생겼으나 분모(시간)와 분자(위험)는 독립 — 10.3% 큰 이유가 곧 Form A 3주+PE정밀심사+FINRA 위험프리미엄. '6개월내 3주 전부통과' 가정이 베팅 전부인데 주별 승인진척 공시 0건); NY_DFS_SUSPENSIVE(NY DFS Form A는 suspensive·waiver불가→단일 주 거부로 딜 정지 가능); SPREAD_IS_RISK_PREMIUM(라이브가 $62.79 확보→gross 10.3%=4딜 중 최대인데, 이는 알파 아니라 multi-state 보험 Form A × PE-scrutiny × 장기부채 보험사 REGULATORY_LONG_TAIL의 위험프리미엄=최대 스프레드=최대 규제꼬리, 라이브가가 정량확증); CLOSING_DATE_UNDEFINED(클로징 '2026년 중' 미정→동일 10.3%가 듀레이션 따라 연 7~41% 진폭→분모 미정 상태서 격상은 계산근거 없는 도박); DELAY_DOMINATES_BREAK(무산보다 장기지연·조건부승인[추가자본/배당제한] 지배); FORM_A_PROGRESS_UNDISCLOSED(주별 승인 공시 미확보); GATE2_NO_DENOMINATOR(연율 분모 부재=#2 입력 부재); CORE_AND_SATELLITE_INELIGIBLE"
       },
       "snapshots": [
         {
@@ -519,12 +537,21 @@
           "annualized": null,
           "days_left": 82,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 63.22,
+          "price_source": "data-scout 06-17: 시장가 $63.22(6/17 일중, range $62.95~63.48, 검색 스니펫 LIVE). gross ($70-63.22)/63.22=10.7%. **신규: 주주총회 통과**(합병·보상 전 안건 가결, Brighthouse IR). 단 진짜 병목 보험 Form A(DE/NY/MA·NY DFS suspensive)+FINRA 1017 주별 grant는 여전히 0건. outside date 9/6(연장 12/26).",
+          "spread_pct": 10.7,
+          "annualized": null,
+          "days_left": 81,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 5,
+        "days_tracked": 6,
         "buy_since": null,
-        "note": "days_tracked=4(06-12 편입, 06-13~06-15). 레드팀 06-15: 신규 규제 마일스톤 없음(Form A 3주+FINRA 진척 0건)→🔴NO_ENTRY watchlist 이월. gross ~11%(5일 stale)는 알파 아닌 보험 Form A(NY DFS suspensive)×PE정밀심사×FINRA 위험프리미엄. 클로징 일자 미특정→연율 분모 부재로 게이트#2 평가 불가. forward 표본(규제꼬리 스펙트럼). 재판정 트리거: ①클로징 일자 특정 ②Form A 주별 승인 진척. 현재 진입 권고 없음. (이하 06-14)레드팀 06-14(outside date 상한 신규반영): 🔴NO_ENTRY 유지·격상 불가. 분모가 '미정'→'최대 ~6.4개월(9/6, 연장 12/26)'로 상한 생겨 형식적 차단 하나 부분해소됐으나, 분모(시간)와 분자(위험)는 독립 — 10.3% 큰 이유가 곧 Form A 3주(NY DFS suspensive)+PE정밀심사+FINRA 위험프리미엄. '6개월내 3주 전부통과' 가정의 근거(주별 승인진척 공시) 0건. 오늘 라이브가 미확보로 분자 미상→연율 재계산 불가. (이하 06-13 forward 표본 전제 유지) 레드팀 06-13(라이브가 신규확보 재검토): 🔴NO_ENTRY 유지·격상 불가. gross 10.3%=4딜 중 최대는 알파 아닌 multi-state 보험 Form A×PE정밀심사 REGULATORY_LONG_TAIL 위험프리미엄(라이브가 정량확증). 클로징일 미정→동일 10.3%가 듀레이션 따라 연 7~41% 진폭→연율 분모 부재로 게이트#2 평가 불가. forward 표본(IMXI=깨끗한 단일 주, CZR=다주 게이밍+divestiture, AES=다주 PUC+CFIUS, BHF=보험 Form A → 규제꼬리 스펙트럼 4극단). 재판정 트리거: ①클로징 일자 특정 ②Form A 주별 승인 진행 공시. 현재 진입 권고 없음."
+        "note": "days_tracked=6(06-12 편입, 06-13~06-17). 레드팀 06-17: 🔴NO_ENTRY 유지(verdict 불변). 주주총회 통과(99.7%)는 deal-break 채널 하나 제거이나 *이미 가격된 기정사실* — 그 증거가 통과 후에도 gross 10.7%(@$63.22 LIVE)가 안 좁아진 것. 진짜 병목 보험 Form A(DE/NY/MA·NY DFS suspensive)+FINRA 1017은 grant 진척 0건 불변→10.7%는 여전히 Form A 위험의 가격표. 재판정 트리거: Form A 주별 grant 진척. 현재 진입 권고 없음. (이하 06-15)레드팀 06-15: 신규 규제 마일스톤 없음(Form A 3주+FINRA 진척 0건)→🔴NO_ENTRY watchlist 이월. gross ~11%(5일 stale)는 알파 아닌 보험 Form A(NY DFS suspensive)×PE정밀심사×FINRA 위험프리미엄. 클로징 일자 미특정→연율 분모 부재로 게이트#2 평가 불가. forward 표본(규제꼬리 스펙트럼). 재판정 트리거: ①클로징 일자 특정 ②Form A 주별 승인 진척. 현재 진입 권고 없음. (이하 06-14)레드팀 06-14(outside date 상한 신규반영): 🔴NO_ENTRY 유지·격상 불가. 분모가 '미정'→'최대 ~6.4개월(9/6, 연장 12/26)'로 상한 생겨 형식적 차단 하나 부분해소됐으나, 분모(시간)와 분자(위험)는 독립 — 10.3% 큰 이유가 곧 Form A 3주(NY DFS suspensive)+PE정밀심사+FINRA 위험프리미엄. '6개월내 3주 전부통과' 가정의 근거(주별 승인진척 공시) 0건. 오늘 라이브가 미확보로 분자 미상→연율 재계산 불가. (이하 06-13 forward 표본 전제 유지) 레드팀 06-13(라이브가 신규확보 재검토): 🔴NO_ENTRY 유지·격상 불가. gross 10.3%=4딜 중 최대는 알파 아닌 multi-state 보험 Form A×PE정밀심사 REGULATORY_LONG_TAIL 위험프리미엄(라이브가 정량확증). 클로징일 미정→동일 10.3%가 듀레이션 따라 연 7~41% 진폭→연율 분모 부재로 게이트#2 평가 불가. forward 표본(IMXI=깨끗한 단일 주, CZR=다주 게이밍+divestiture, AES=다주 PUC+CFIUS, BHF=보험 Form A → 규제꼬리 스펙트럼 4극단). 재판정 트리거: ①클로징 일자 특정 ②Form A 주별 승인 진행 공시. 현재 진입 권고 없음."
       }
     },
     {
@@ -578,12 +605,21 @@
           "annualized": null,
           "days_left": 288,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 14.64,
+          "price_source": "data-scout 06-17: 시장가 $14.64(직전 종가 ~6/16, 검색 스니펫 LIVE급). gross ($15-14.64)/14.64=2.5%. 신규: $10억 회사채(2029/2033) 6/16 클로징=딜무관 재무활동. 규제(PUCO·NYPSC·FERC·CFIUS·HSR) 개별 grant 진척 0건. 클로징 late-2026/early-2027, CFIUS(외국인 QIA/EQT) 핵심변수.",
+          "spread_pct": 2.5,
+          "annualized": null,
+          "days_left": 287,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 4,
+        "days_tracked": 5,
         "buy_since": null,
-        "note": "days_tracked=3(06-13 편입, 06-14, 06-15). 레드팀 06-15: 신규 규제 마일스톤 없음→🔴NO_ENTRY watchlist 이월. gross 2.25%→연율 ~2.8~4.5%<허들7.3% AND T-bill 4.3% 둘다 미달(CZR형 연율희석) + 규제 비청정(CFIUS 외국인 QIA) 장기지연 지배. 재판정 트리거 사실상 없음(스프레드 구조적 미달) — forward 페이퍼 학습용. 현재 진입 권고 없음. (이하 06-14)레드팀 06-14: 신규 규제 마일스톤 없음→🔴NO_ENTRY watchlist 이월. 레드팀 즉시 🔴NO_ENTRY — drop 아닌 tracking: 규제꼬리 스펙트럼 4번째 극단(다주 PUC+FERC+CFIUS+외국인 QIA) forward 표본. 진입 부적격: gross 2.2%→연율 2.6~4.4%<허들·T-bill 둘다 미달(CZR형 연율희석) + 규제 비청정(CFIUS 외국인) 장기지연 지배. 재판정 트리거 사실상 없음(스프레드 구조적 미달) — forward 페이퍼 학습용. 현재 진입 권고 없음."
+        "note": "days_tracked=5(06-13 편입, 06-14~06-17). 레드팀 06-17: 신규 규제 마일스톤 없음(PUCO·NYPSC·FERC·CFIUS grant 0건)→🔴NO_ENTRY 이월. gross 2.5%→연율 ~3.1~5.0%<허들7.3% AND T-bill 4.3% 둘다 미달(CZR형 연율희석)+규제 비청정(CFIUS 외국인 QIA) 장기지연 지배. 재판정 트리거 사실상 없음(스프레드 구조적 미달)—forward 페이퍼 학습용. (이하 06-15)레드팀 06-15: 신규 규제 마일스톤 없음→🔴NO_ENTRY watchlist 이월. gross 2.25%→연율 ~2.8~4.5%<허들7.3% AND T-bill 4.3% 둘다 미달(CZR형 연율희석) + 규제 비청정(CFIUS 외국인 QIA) 장기지연 지배. 재판정 트리거 사실상 없음(스프레드 구조적 미달) — forward 페이퍼 학습용. 현재 진입 권고 없음. (이하 06-14)레드팀 06-14: 신규 규제 마일스톤 없음→🔴NO_ENTRY watchlist 이월. 레드팀 즉시 🔴NO_ENTRY — drop 아닌 tracking: 규제꼬리 스펙트럼 4번째 극단(다주 PUC+FERC+CFIUS+외국인 QIA) forward 표본. 진입 부적격: gross 2.2%→연율 2.6~4.4%<허들·T-bill 둘다 미달(CZR형 연율희석) + 규제 비청정(CFIUS 외국인) 장기지연 지배. 재판정 트리거 사실상 없음(스프레드 구조적 미달) — forward 페이퍼 학습용. 현재 진입 권고 없음."
       }
     },
     {
@@ -619,12 +655,21 @@
           "annualized": null,
           "days_left": 361,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 7.02,
+          "price_source": "data-scout 06-17: 시장가 $7.02(~6/16 종가, prev close $7.03, range $7.01~7.04, 검색 스니펫 LIVE). gross ($7.40-7.02)/7.02=5.4%. 신규 진척 없음(6/12 서명, 6/15 발표 직후). 마감 ~mid-2027(12개월+).",
+          "spread_pct": 5.4,
+          "annualized": null,
+          "days_left": 360,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 2,
+        "days_tracked": 3,
         "buy_since": null,
-        "note": "days_tracked=2(06-15 편입, 06-16). 레드팀 06-16: 🔴NO_ENTRY 유지. 라이브가 확보(gross 5.3%, 좁지 않음)지만 ÷12개월+(mid-2027)=세후 net ~3.7%로 허들7.3%·T-bill4.3% 둘다 미달(CZR/AES형 ANNUALIZED_LT_GATE) — '좁지 않은 분자도 12개월+ 듀레이션이 연율을 죽인다'. day-2로 게이트#1 미충족. multi-jurisdiction 결제 라이선스/반독점 장기지연 지배. forward 페이퍼 학습용. 현재 진입 권고 없음."
+        "note": "days_tracked=3(06-15 편입, 06-16~06-17). 레드팀 06-17: 🔴NO_ENTRY 유지. gross 5.4%(좁지 않음)지만 ÷12개월+(mid-2027)=세후 net ~3.8%로 허들7.3%·T-bill4.3% 둘다 미달(CZR/AES형 ANNUALIZED_LT_GATE)—'좁지 않은 분자도 12개월+ 듀레이션이 연율을 죽인다'. multi-jurisdiction 결제 라이선스/반독점 장기지연 지배. forward 페이퍼 학습용. 현재 진입 권고 없음. (이하 06-16)레드팀 06-16: 🔴NO_ENTRY 유지. 라이브가 확보(gross 5.3%, 좁지 않음)지만 ÷12개월+(mid-2027)=세후 net ~3.7%로 허들7.3%·T-bill4.3% 둘다 미달(CZR/AES형 ANNUALIZED_LT_GATE) — '좁지 않은 분자도 12개월+ 듀레이션이 연율을 죽인다'. day-2로 게이트#1 미충족. multi-jurisdiction 결제 라이선스/반독점 장기지연 지배. forward 페이퍼 학습용. 현재 진입 권고 없음."
       }
     },
     {
@@ -651,12 +696,21 @@
           "annualized": null,
           "days_left": 176,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 123.25,
+          "price_source": "data-scout 06-17: 시장가 $123.25(6/12 스니펫, 6/16 라이브 갱신 실패 STALE ~5D). gross ($124-123.25)/123.25=0.6%. SC TO-T 정식 아직 미제출(검색상 SC TO-C만)=합의일 6/9+10영업일=~6/23 개시의무 on-track이나 미개시. 약식합병 2단계 $124, financing조건 없음.",
+          "spread_pct": 0.6,
+          "annualized": null,
+          "days_left": 175,
+          "status": "tracking"
         }
       ],
       "conviction": {
-        "days_tracked": 1,
+        "days_tracked": 2,
         "buy_since": null,
-        "note": "days_tracked=1(06-16 편입). 레드팀 06-16: 🔴NO_ENTRY('너무 좁아서 알파 없음'). gross 0.66%는 011 유니버스 최청정 빅파마 딜이지만 바로 그 청정도 때문에 거대 arb가 0.66%로 압축(§2 용량역전)→FX+처리비+한국22%세 후 net≈0/음수=분자가 마찰 임계 미만. NUVL(가장 깨끗→너무 좁음)은 IMXI(넓은 10.3%=위험가격)의 거울상 — '규제청정↑⇒스프레드↓⇒개인 net↓' 역관계의 한 극단. SC TO-T 미개시(~6/23)·가격 7일 STALE. watchlist 추적만, 진입 권고 없음."
+        "note": "days_tracked=2(06-16 편입, 06-17). 레드팀 06-17: 🔴NO_ENTRY 유지('너무 좁아서 알파 없음'). gross 0.6%(STALE)=011 최청정 빅파마 딜이지만 그 청정도 때문에 거대 arb가 압축→FX+처리비+한국22%세 후 net≈0/음수=분자가 마찰 임계 미만. SC TO-T 미개시(~6/23 의무)·가격 STALE. watchlist 추적만. (이하 06-16)레드팀 06-16: 🔴NO_ENTRY('너무 좁아서 알파 없음'). gross 0.66%는 011 유니버스 최청정 빅파마 딜이지만 바로 그 청정도 때문에 거대 arb가 0.66%로 압축(§2 용량역전)→FX+처리비+한국22%세 후 net≈0/음수=분자가 마찰 임계 미만. NUVL(가장 깨끗→너무 좁음)은 IMXI(넓은 10.3%=위험가격)의 거울상 — '규제청정↑⇒스프레드↓⇒개인 net↓' 역관계의 한 극단. SC TO-T 미개시(~6/23)·가격 7일 STALE. watchlist 추적만, 진입 권고 없음."
       }
     },
     {
@@ -683,12 +737,85 @@
           "annualized": null,
           "days_left": 198,
           "status": "tracking"
+        },
+        {
+          "date": "2026-06-17",
+          "price": 18.2,
+          "price_source": "data-scout 06-17: 시장가 ~$18.20(6/16 일중 11:45am, 발표당일 +11.65% 첫 측정, 검색 스니펫). gross ($18.50-18.20)/18.20=1.6%(타이트, 우호적 LBO형). ⚠️일부 소스 $16.37=발표전 prev close STALE→무시. 6/17 정식 종가 미확보. 이사회 만장일치·전액현금·공동창업자 voting agreement(표결 near-locked)·CCG 결합發 HSR 잔여.",
+          "spread_pct": 1.6,
+          "annualized": null,
+          "days_left": 197,
+          "status": "tracking"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 2,
+        "buy_since": null,
+        "note": "days_tracked=2(06-16 편입, 06-17). 06-17 오케스트레이터 관측: 첫 gross 측정 ~1.6%(@$18.20, 6/16 일중)=타이트—Q4 2026(~6.5개월) 듀레이션으로 연율화해도 ~3% 수준, 세후 net은 허들·T-bill 미달 개연(NUVL형 SPREAD_TOO_TIGHT 방향). 레드팀 본격 재판정은 6/17 정식 종가·8-K closing conditions 확보 후. 현 verdict=🔴NO_ENTRY 유지. (이하 06-16)레드팀 06-16: 🔴NO_ENTRY(forward 대기). steelman=all-cash·이사회 만장일치·공동창업자 voting agreement로 표결 near-locked·financing committed·소형($375M) 개인우위·무산갭다운 -11%로 얕은 음의왜도. 그러나 발표 당일 라이브 호가 미확보→gross 미측정→세후 net 연율 산출 구조적 불가(평가 미성숙). PE financing 원문 미확인+CCG 결합發 HSR 집중도 심사 잔여. 호가 확보·8-K 정독 후 Q4 듀레이션 기준 세후 net≥7.3% 확인 시 재판정. 진입 권고 없음."
+      }
+    },
+    {
+      "id": "ALOT-arcline-merger",
+      "ticker": "ALOT",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 29.0,
+      "deadline": "2026-09-30",
+      "source_url": "https://www.businesswire.com/news/home/20260617421616/en/AstroNova-to-be-Acquired-by-Arcline-for-$29.00-per-Share-in-All-Cash-Transaction",
+      "added": "2026-06-17",
+      "status": "tracking",
+      "redteam": {
+        "verdict": "🟡 조건부-추적(tracking 편입, 즉시 drop 아님 — 라이브 호가 미확보)",
+        "date": "2026-06-17",
+        "flag": "DAY0·LIVE_PRICE_UNVERIFIED(NO_GROSS, 발표당일 +70% 급등→정식 종가/gross 미확보)·STRATEGIC_REVIEW_RESULT(셀사이드 동기 명확=deal certainty 상대 양호)·PE_ACQUIRER(ARCLINE)·FINANCING_CONDITION_UNVERIFIED·LARGE_PREMIUM_209%(4/6 종가 대비→발표전 distressed 베이스→무산 시 회귀가 깊은 갭다운 개연)·DEEP_GAPDOWN_RISK(-40%+ 개연)·NEGSKEW_GAPDOWN·CLOSING_Q3_2026·SMALLCAP_$272M(개인우위 구간)"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-17",
+          "price": null,
+          "price_source": "data-scout 06-17 신규발굴: AstroNova를 Arcline Investment Management가 $29.00 전액현금 인수(~$272M EV), 발표 2026-06-17(오늘). 마감 Q3 2026. 주주투표 구조, 이사회 만장일치(전략적대안 검토 결과). 발표 당일 +70% 급등(4/6 종가 대비 ~209% 프리미엄)→정식 종가/gross 미확보(내일 첫 측정 가능). 출처 businesswire 20260617421616.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 105,
+          "status": "tracking"
         }
       ],
       "conviction": {
         "days_tracked": 1,
         "buy_since": null,
-        "note": "days_tracked=1(06-16 편입). 레드팀 06-16: 🔴NO_ENTRY(forward 대기). steelman=all-cash·이사회 만장일치·공동창업자 voting agreement로 표결 near-locked·financing committed·소형($375M) 개인우위·무산갭다운 -11%로 얕은 음의왜도. 그러나 발표 당일 라이브 호가 미확보→gross 미측정→세후 net 연율 산출 구조적 불가(평가 미성숙). PE financing 원문 미확인+CCG 결합發 HSR 집중도 심사 잔여. 호가 확보·8-K 정독 후 Q4 듀레이션 기준 세후 net≥7.3% 확인 시 재판정. 진입 권고 없음."
+        "note": "days_tracked=1(06-17 편입). 레드팀 06-17: 🟡tracking(즉시 drop 아님). steelman=all-cash·이사회 만장일치·전략적대안 검토 결과(셀사이드 동기·deal certainty 상대 양호)·소형($272M) 개인우위. 치명반론 2: ①라이브 미확보→gross 미측정 정량평가 불가 ②+70% 점프·209% 프리미엄=발표전 distressed로 눌린 베이스→무산 시 회귀가 -40%+ 깊은 갭다운 개연. tracking이 맞으나 현 시점 진입 부적격. 재판정 트리거: ⓐ6/18+ 라이브 gross≥4%·슬리피지<1% + ⓑQ3 듀레이션 세후 net≥7.3% + ⓒ8-K closing conditions(financing/규제) 정독. 현재 진입 권고 없음."
+      }
+    },
+    {
+      "id": "LSTA-kuva-tender",
+      "ticker": "LSTA",
+      "market": "US",
+      "type": "merger_cash",
+      "deal_price": 4.0,
+      "deadline": "2026-07-10",
+      "source_url": "https://www.globenewswire.com/news-release/2026/06/10/3309632/18623/en/Lisata-Therapeutics-Announces-Commencement-of-Tender-Offer-by-Kuva-Labs-Inc.html",
+      "added": "2026-06-17",
+      "status": "tracking",
+      "redteam": {
+        "verdict": "🔴 NO_ENTRY (forward 대기 — CVR 구조로 순수 현금차익 아님)",
+        "date": "2026-06-17",
+        "flag": "CVR_STRUCTURE_NOT_PURE_CASH(CVR=0 평가; $4 확정분만 near-arb)·CVR_ADDED_BY_AMENDMENT(5월 수정으로 CVR 추가=원 $4-only 박함을 옵션성으로 메꾼 신호)·LIVE_PRICE_UNVERIFIED(NO_GROSS_ON_$4)·LOW_PRICE_STOCK_FRICTION_HIGH($4 저가주 호가스프레드% 넓음)·SPREAD_TOO_TIGHT_RISK(저가주판, FX+처리비+22%세 후 net≈0/음수 개연)·SINGLE_PRODUCT_BIOTECH_NEGSKEW(certepetide)·TENDER_EXPIRY_7/10"
+      },
+      "snapshots": [
+        {
+          "date": "2026-06-17",
+          "price": null,
+          "price_source": "data-scout 06-17 신규발굴: Lisata Therapeutics를 Kuva Labs(자회사 Kuva Acquisition Corp)가 $4.00 현금/주 + CVR 1개(마일스톤시 최대 +$3.00) 인수. SC TO-T 정식 제출·tender 6/10 개시, 만료 2026-07-10. 이사회 만장일치 권고. 라이브가 미확보(403)→$4 대비 gross 미측정. 출처 globenewswire 3309632.",
+          "spread_pct": null,
+          "annualized": null,
+          "days_left": 23,
+          "status": "tracking"
+        }
+      ],
+      "conviction": {
+        "days_tracked": 1,
+        "buy_since": null,
+        "note": "days_tracked=1(06-17 편입). 레드팀 06-17: 🔴NO_ENTRY(forward 대기). steelman=$4 현금 확정분 만료 7/10 임박(~3주)·과반 tender 단순. 치명반론 2: ①CVR은 near-arb 아님—$4 현금분만 평가, 바이오 마일스톤 CVR(조건부·양도불가)은 통상 0 평가; CVR이 5월 수정으로 *추가*된 것 자체가 원 현금가 박함 신호 ②$4 저가주 마찰(호가스프레드%·FX·tender 처리비·22%세) 차감 후 net≈0/음수 개연. 단일제품 바이오 음의왜도. 재판정 트리거: $4 대비 라이브 gross≥4%(저가주 마찰 하한 더 높게) AND 과반 tender 도달 신호→그래도 CVR=0 가정 유지. 현재 진입 권고 없음."
       }
     }
   ]
